@@ -38,5 +38,5 @@
     "incremental": true
   },
   "exclude": ["./out/**/*", "./node_modules/**/*"],
-  "include": ["next-env.d.ts", "**/*.ts"]
+  "include": ["**/*.ts"]
 }
