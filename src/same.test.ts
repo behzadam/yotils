@@ -1,4 +1,4 @@
-import areEqual from "./areEqual";
+import same from "./same";
 
 const validCases = test.each`
  input                    | expected
@@ -19,13 +19,13 @@ const invalidCases = test.each`
 describe('areEqual valid cases', () => {
   validCases('should return $expected when input is: $input',
     ({ input, expected }) => {
-      expect(areEqual(input)).toBe(expected)
+      expect(same(input)).toBe(expected)
     })
 });
 
 describe('areEqual invalid cases', () => {
   invalidCases('should return $expected when input is: $input',
   ({ input, expected }) => {
-    expect(areEqual(input)).toBe(expected)
+    expect(same(input)).toBe(expected)
   })
 });
