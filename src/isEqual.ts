@@ -1,6 +1,5 @@
 import compareDate from "./utils/compareDate";
 import isDate from "./utils/isDate";
-import isDefined from "./utils/isDefined";
 import isMap from "./utils/isMap";
 import isObject from "./utils/isObject";
 import isSet from "./utils/isSet";
