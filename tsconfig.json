@@ -30,13 +30,8 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": false,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "jsx": "preserve",
-    "noEmit": true,
-    "isolatedModules": true,
-    "incremental": true
+    "forceConsistentCasingInFileNames": true
   },
   "exclude": ["./out/**/*", "./node_modules/**/*"],
-  "include": ["**/*.ts"]
+  "include": ["./src/**/*.ts"]
 }
