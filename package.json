@@ -5,6 +5,11 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "github:behzadam/yotils"
+  },
+  "homepage": "https://github.com/behzadam/yotils",
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
