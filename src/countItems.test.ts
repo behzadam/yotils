@@ -1,4 +1,4 @@
-import classify from "./classify";
+import countItems from "./countItems";
 
 const validCases = test.each`
  input                                | expected
@@ -8,6 +8,6 @@ const validCases = test.each`
 describe('classify valid cases', () => {
   validCases('should return $expected when input is: $input',
     ({ input, expected }) => {
-      expect(classify(input)).toStrictEqual(expected)
+      expect(countItems(input)).toStrictEqual(expected)
     })
 });
