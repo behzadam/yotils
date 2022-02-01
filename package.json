@@ -2,7 +2,6 @@
   "name": "yotils",
   "version": "1.0.1",
   "description": "Typescript utils",
-  "source": "./src/index.ts",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "repository": {
@@ -14,16 +13,13 @@
     "test": "jest",
     "lint": "eslint .",
     "docs": "typedoc",
-    "check": "tsc --noEmit",
-    "build": "parcel build"
+    "build": "tsc --noEmit"
   },
   "keywords": [
     "typescript",
     "utils"
   ],
   "devDependencies": {
-    "@parcel/packager-ts": "^2.2.1",
-    "@parcel/transformer-typescript-types": "^2.2.1",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.10",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
@@ -36,7 +32,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "jest": "^27.4.7",
-    "parcel": "^2.2.1",
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.2",
     "typedoc": "^0.22.10",
