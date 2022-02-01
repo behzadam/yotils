@@ -22,7 +22,7 @@
     "noFallthroughCasesInSwitch": true,
 
     "target": "es5",
-    "outDir": "out",
+    "outDir": "dist",
     "declaration": true,
     "sourceMap": true,
 
@@ -32,6 +32,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["./out/**/*", "./node_modules/**/*"],
+  "exclude": ["./dist/**/*", "./node_modules/**/*"],
   "include": ["./src/**/*.ts"]
 }
