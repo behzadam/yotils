@@ -1,49 +1,31 @@
 {
-  // Configuration for JavaScript files
-  "extends": ["airbnb-base", "plugin:prettier/recommended"],
-  "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true
-      }
-    ]
+  "plugins": [
+    "@typescript-eslint/eslint-plugin",
+    "eslint-plugin-tsdoc",
+    "unused-imports",
+    "eslint-plugin-tsdoc"
+  ],
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
   },
-  "overrides": [
-    // Configuration for TypeScript files
+  "rules": {
+    "tsdoc/syntax": "warn"
+  },
+  "import/order": [
+    "error",
     {
-      "files": ["./src/**/*.ts"],
-      "plugins": ["@typescript-eslint", "unused-imports"],
-      "extends": ["airbnb-typescript", "plugin:prettier/recommended"],
-      "parserOptions": {
-        "project": "./tsconfig.json"
-      },
-      "rules": {
-        "prettier/prettier": [
-          "error",
-          {
-            "singleQuote": true
-          }
-        ],
-        "import/order": [
-          "error",
-          {
-            "newlines-between": "always",
-            "alphabetize": {
-              "order": "asc",
-              "caseInsensitive": true
-            }
-          }
-        ],
-        "@typescript-eslint/comma-dangle": "off", // Avoid conflict rule between Eslint and Prettier
-        "import/prefer-default-export": "off", // Named export is easier to refactor automatically
-        "@typescript-eslint/no-unused-vars": "off",
-        "unused-imports/no-unused-imports": "error",
-        "unused-imports/no-unused-vars": [
-          "error",
-          { "argsIgnorePattern": "^_" }
-        ]
+      "newlines-between": "always",
+      "alphabetize": {
+        "order": "asc",
+        "caseInsensitive": true
       }
     }
-  ]
+  ],
+  "@typescript-eslint/comma-dangle": "off", // Avoid conflict rule between Eslint and Prettier
+  "import/prefer-default-export": "off", // Named export is easier to refactor automatically
+  "@typescript-eslint/no-unused-vars": "off",
+  "unused-imports/no-unused-imports": "error",
+  "unused-imports/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
 }
