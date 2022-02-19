@@ -33,3 +33,4 @@ dist
 .idea
 docs
 .parcel-cache
+.DS_Store
