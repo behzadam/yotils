@@ -1,5 +1,5 @@
 import isDate from "./isDate";
-import compareDate from "./compareDate";
+import compareDate from "./date/compareDate";
 import isMap from "./isMap";
 import isObject from "./isObject";
 import isSet from "./isSet";
@@ -22,15 +22,15 @@ function isEqual(target: any, other: any): boolean {
 
   if (isMap(target)) {
     if (target.size !== other.size) return false;
-    for (let item of target.entries()) if (!other.has(item[0])) return false;
-    for (let item of target.entries())
+    for (const item of target.entries()) if (!other.has(item[0])) return false;
+    for (const item of target.entries())
       if (!isEqual(item[1], target.get(item[0]))) return false;
     return true;
   }
 
   if (isSet(target)) {
     if (target.size !== other.size) return false;
-    for (let item of target.entries()) if (!other.has(item[0])) return false;
+    for (const item of target.entries()) if (!other.has(item[0])) return false;
     return true;
   }
 
@@ -43,7 +43,7 @@ function isEqual(target: any, other: any): boolean {
 
   // object
   if (!isObject(target) || !isObject(other)) return false;
-  let keys = Object.keys(target);
+  const keys = Object.keys(target);
   if (keys.length !== Object.keys(other).length) return false;
   return keys.every((k) => isEqual(target[k], other[k]));
 }
