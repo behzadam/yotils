@@ -1,8 +1,8 @@
 import isDate from "./isDate";
-import compareDate from "./utils/compareDate";
-import isMap from "./utils/isMap";
-import isObject from "./utils/isObject";
-import isSet from "./utils/isSet";
+import compareDate from "./compareDate";
+import isMap from "./isMap";
+import isObject from "./isObject";
+import isSet from "./isSet";
 
 function isEqual(target: Date, other: Date): boolean;
 function isEqual(target: boolean, other: boolean): boolean;

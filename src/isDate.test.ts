@@ -1,5 +1,5 @@
 import isDate from "./isDate";
-import { describeGen } from "./utils/describeGen";
+import { describeGen } from "./describeGen";
 
 describe(describeGen(isDate.name).valid, () => {
   test("should return true on date type", () => {
