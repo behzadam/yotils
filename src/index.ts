@@ -2,6 +2,6 @@
 import areSame from "./array/areSame";
 import countItems from "./array/countItems";
 
-import isEqual from "./isEqual";
+import isEqual from "./util/isEqual";
 
 export { areSame, countItems, isEqual };
