@@ -1,19 +1,15 @@
 {
+  "extends": "@tsconfig/node12/tsconfig.json",
   "compilerOptions": {
-    "lib": ["esnext"],
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "strict": true,
     "noUncheckedIndexedAccess": true,
     "downlevelIteration": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
-    "target": "es5",
     "outDir": "dist",
     "declaration": true,
     "sourceMap": true,
@@ -25,5 +21,5 @@
     "forceConsistentCasingInFileNames": true
   },
   "exclude": ["./dist/**/*", "./node_modules/**/*"],
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/index.ts"]
 }
