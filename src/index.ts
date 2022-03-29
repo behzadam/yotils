@@ -5,6 +5,25 @@ import hasDuplicates from "./array/hasDuplicates";
 import isArray from "./array/isArray";
 import wrapInArray from "./array/wrapInArray";
 
+// collection
+import isMap from "./collection/isMap";
+import isSet from "./collection/isSet";
+
+// date
+import isDate from "./date/isDate";
+import isDateValid from "./date/isDateValid";
+
 import isEqual from "./util/isEqual";
 
-export { areSame, countItems, hasDuplicates, wrapInArray, isArray, isEqual };
+export {
+  areSame,
+  countItems,
+  hasDuplicates,
+  wrapInArray,
+  isArray,
+  isEqual,
+  isMap,
+  isSet,
+  isDate,
+  isDateValid,
+};
