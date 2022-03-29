@@ -13,6 +13,9 @@ import isSet from "./collection/isSet";
 import isDate from "./date/isDate";
 import isDateValid from "./date/isDateValid";
 
+// number
+import isNumber from "./number/isNumber";
+
 import isEqual from "./util/isEqual";
 
 export {
@@ -26,4 +29,5 @@ export {
   isSet,
   isDate,
   isDateValid,
+  isNumber,
 };
