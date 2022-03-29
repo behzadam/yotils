@@ -16,6 +16,9 @@ import isDateValid from "./date/isDateValid";
 // number
 import isNumber from "./number/isNumber";
 
+// object
+import isObject from "./object/isObject";
+
 import isEqual from "./util/isEqual";
 
 export {
@@ -30,4 +33,5 @@ export {
   isDate,
   isDateValid,
   isNumber,
+  isObject,
 };
