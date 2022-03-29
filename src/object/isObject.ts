@@ -1,5 +1,5 @@
-function isObject(value: any): boolean {
-  return typeof value === "object"
+function isObject(value: any): value is object {
+  return typeof value === "object";
 }
 
 export default isObject;
