@@ -12,8 +12,8 @@
     "noFallthroughCasesInSwitch": true,
     "outDir": "dist",
     "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
-
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": false,
