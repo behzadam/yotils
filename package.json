@@ -2,8 +2,8 @@
   "name": "yotils",
   "version": "1.0.1",
   "description": "Typescript utils",
-  "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "github:behzadam/yotils"
