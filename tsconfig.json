@@ -10,7 +10,7 @@
     "noUnusedParameters": true,
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "dist",
+    "outDir": "lib",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -20,6 +20,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["./dist/**/*", "./node_modules/**/*"],
+  "exclude": ["./lib/**/*", "./node_modules/**/*"],
   "include": ["./src/**/*.ts", "./src/index.ts"]
 }
