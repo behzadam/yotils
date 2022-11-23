@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Typescript utils",
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "github:behzadam/yotils"
