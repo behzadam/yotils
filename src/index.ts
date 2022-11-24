@@ -1,5 +1,6 @@
 // array
 export { areSame } from "./are-same";
+export { isEqualDate } from "./is-equal-date";
 import countItems from "./array/countItems";
 import hasDuplicates from "./array/hasDuplicates";
 import isArray from "./array/isArray";
