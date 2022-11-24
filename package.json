@@ -12,8 +12,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "docs": "typedoc",
-    "build": "tsc --noEmit"
+    "docs": "yarn api-extractor run --local",
+    "build": "tsc"
   },
   "keywords": [
     "typescript",
