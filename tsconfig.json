@@ -18,8 +18,12 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": false,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lib": ["./src/*.ts"]
+    }
   },
   "exclude": ["./lib/**/*", "./node_modules/**/*"],
-  "include": ["./src/**/*.ts", "./src/index.ts"]
+  "include": ["./src/**/*.ts", "./src/index.ts", "./tests/**/*.ts"]
 }
