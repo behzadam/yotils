@@ -1,6 +1,6 @@
 import isArray from "../array/isArray";
-import isObject from "../object/isObject";
-import isString from "../string/isString";
+import isObject from "./isObject";
+import isString from "./isString";
 
 function isEmpty<T extends string | object | any[]>(value: T): value is never {
   if (isString(value) || isArray(value)) {

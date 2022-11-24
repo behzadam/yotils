@@ -1,12 +1,12 @@
 // array
-import areSame from "./array/areSame";
+import areSame from "./areSame";
 import countItems from "./array/countItems";
 import hasDuplicates from "./array/hasDuplicates";
 import isArray from "./array/isArray";
 import wrapInArray from "./array/wrapInArray";
 
 // collection
-import isMap from "./collection/isMap";
+import isMap from "./isMap";
 import isSet from "./collection/isSet";
 
 // date
@@ -14,12 +14,12 @@ import isDate from "./date/isDate";
 import isDateValid from "./date/isDateValid";
 
 // number
-import isNumber from "./number/isNumber";
+import isNumber from "./isNumber";
 
 // object
-import isObject from "./object/isObject";
+import isObject from "./isObject";
 
-import isEqual from "./util/isEqual";
+import isEqual from "./isEqual";
 
 export {
   areSame,
