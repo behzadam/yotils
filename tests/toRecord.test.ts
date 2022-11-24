@@ -1,5 +1,5 @@
-import toRecord from "./toRecord";
-import { describeGen } from "../describeGen";
+import toRecord from "../src/object/toRecord";
+import { describeGen } from "../src/describeGen";
 
 describe(describeGen(toRecord.name).valid, () => {
   test("should return record of an array", () => {

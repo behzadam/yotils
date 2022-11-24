@@ -1,4 +1,4 @@
-import isDateValid from "./isDateValid";
+import isDateValid from "../src/date/isDateValid";
 
 const validCases = test.each`
   input                                  | expected

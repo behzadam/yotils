@@ -1,4 +1,4 @@
-import countItems from "./countItems";
+import countItems from "../src/array/countItems";
 
 const validCases = test.each`
   input                             | expected

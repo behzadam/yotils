@@ -1,5 +1,5 @@
-import isArray from "./isArray";
-import { describeGen } from "../describeGen";
+import isArray from "../src/array/isArray";
+import { describeGen } from "../src/describeGen";
 
 const validCases = test.each`
   input             | expected

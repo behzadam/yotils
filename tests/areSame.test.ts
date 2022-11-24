@@ -1,4 +1,4 @@
-import areSame from "./areSame";
+import areSame from "../src/array/areSame";
 
 const validCases = test.each`
   input                    | expected

@@ -1,4 +1,4 @@
-import hasDuplicates from "./hasDuplicates";
+import hasDuplicates from "../src/array/hasDuplicates";
 
 const validCases = test.each`
   array                    | expected
