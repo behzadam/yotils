@@ -12,10 +12,8 @@
  * areSame([1, 2]) // false
  * ```
  */
-function areSame<T extends string | number | boolean>(
+export function areSame<T extends string | number | boolean>(
   arr: Required<T[]>
 ): boolean {
   return arr.every((item) => item === arr[0]);
 }
-
-export default areSame;

@@ -1,5 +1,5 @@
 // array
-import areSame from "./areSame";
+export { areSame } from "./areSame";
 import countItems from "./array/countItems";
 import hasDuplicates from "./array/hasDuplicates";
 import isArray from "./array/isArray";
@@ -22,7 +22,6 @@ import isObject from "./isObject";
 import isEqual from "./isEqual";
 
 export {
-  areSame,
   countItems,
   hasDuplicates,
   wrapInArray,
