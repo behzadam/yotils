@@ -1,5 +1,5 @@
 // array
-export { areSame } from "./areSame";
+export { areSame } from "./are-same";
 import countItems from "./array/countItems";
 import hasDuplicates from "./array/hasDuplicates";
 import isArray from "./array/isArray";
