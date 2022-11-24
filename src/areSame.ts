@@ -1,8 +1,8 @@
 /**
- * Checks if all items in the given array are same.
- * @param path - Given array.
- * @returns true | false
- * @beta 1.0
+ * Compares all items in the given array and returns true if they are same.
+ * @param arr - Given array.
+ * @returns - true | false
+ * @beta
  *
  * #### Usage
  *
