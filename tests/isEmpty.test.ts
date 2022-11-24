@@ -1,5 +1,5 @@
 import isEmpty from "../src/isEmpty";
-import { describeGen } from "../src/describeGen";
+import { describeGen } from "./utils/describe-gen";
 
 describe(describeGen(isEmpty.name).valid, () => {
   test("should return true on empty values", () => {

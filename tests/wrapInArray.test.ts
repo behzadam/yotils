@@ -1,4 +1,4 @@
-import { describeGen } from "../src/describeGen";
+import { describeGen } from "./utils/describe-gen";
 import wrapInArray from "../src/array/wrapInArray";
 
 const validCases = test.each`
