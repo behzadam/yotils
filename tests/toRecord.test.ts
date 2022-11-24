@@ -1,4 +1,4 @@
-import toRecord from "../src/object/toRecord";
+import toRecord from "../src/toRecord";
 import { describeGen } from "../src/describeGen";
 
 describe(describeGen(toRecord.name).valid, () => {
