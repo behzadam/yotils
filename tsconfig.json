@@ -21,7 +21,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@lib": ["./src/*.ts"]
+      "@lib/*": ["./src/*"]
     }
   },
   "exclude": ["./lib/**/*", "./node_modules/**/*"],
