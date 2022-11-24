@@ -12,7 +12,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "docs": "yarn api-extractor run --local",
+    "generate": "yarn api-extractor run --local",
     "build": "tsc"
   },
   "keywords": [
