@@ -6,8 +6,9 @@
  * @remarks Date.prototype.getTime() returns number of milliseconds.
  * @beta
  */
-function compareDate(target: Required<Date>, other: Required<Date>): boolean {
+export function isEqualDate(
+  target: Required<Date>,
+  other: Required<Date>
+): boolean {
   return target.getTime() === other.getTime();
 }
-
-export default compareDate;
