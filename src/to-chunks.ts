@@ -1,9 +1,14 @@
 /**
  * Split a string into N chunks of equal size.
  * The last chunk may be smaller.
- * @param - input
- * @param - chunkSize
- * @returns array of chunks of an empty array
+ * @param input - string
+ * @param chunkSize - number
+ * @returns Array of chunks.
+ * @example
+ * ```ts
+ *  const chunks: string[] = toChunks("Lorem ipsum dolor sit amet, consectetur adipis", 4);
+ * ```
+ * @public
  */
 function toChunks(input: string, chunkSize: number): string[] {
   const chunkCount = Math.ceil(input.length / chunkSize);
