@@ -5,10 +5,10 @@
  * @param - chunkSize
  * @returns array of chunks of an empty array
  */
-function splitIntoChunks(input: string, chunkSize: number): string[] {
+function toChunks(input: string, chunkSize: number): string[] {
   const chunkCount = Math.ceil(input.length / chunkSize);
   const regexp = new RegExp(`.{1,${chunkCount}}`, "g");
   return input.match(regexp) ?? [];
 }
 
-export default splitIntoChunks;
+export default toChunks;
