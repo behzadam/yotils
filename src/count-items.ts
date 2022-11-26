@@ -1,6 +1,6 @@
 import { Primitive } from "@lib/types";
 /**
- * Counts of repeated items.
+ * Counts of repeated items in flattened arrays.
  * @param array - array of items.
  * @returns - key value list
  * @example
