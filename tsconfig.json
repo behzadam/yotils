@@ -24,6 +24,6 @@
       "@lib": ["./src/index.ts"]
     }
   },
-  "exclude": ["./lib/**/*", "./node_modules/**/*"],
+  "exclude": ["lib", "dist", "./node_modules"],
   "include": ["./src/**/*.ts"]
 }
