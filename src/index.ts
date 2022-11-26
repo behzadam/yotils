@@ -7,7 +7,7 @@ import isArray from "./array/isArray";
 import wrapInArray from "./array/wrapInArray";
 
 // collection
-import isMap from "./isMap";
+import isMap from "./is-map";
 import isSet from "./collection/isSet";
 
 // date
@@ -15,12 +15,12 @@ import isDate from "./date/isDate";
 import isDateValid from "./date/isDateValid";
 
 // number
-import isNumber from "./isNumber";
+import isNumber from "./is-number";
 
 // object
-import isObject from "./isObject";
+import isObject from "./is-object";
 
-import isEqual from "./isEqual";
+import isEqual from "./is-equal";
 
 export {
   countItems,

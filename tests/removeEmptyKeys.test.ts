@@ -1,4 +1,4 @@
-import removeEmptyKeys from "../src/removeEmptyKeys";
+import removeEmptyKeys from "../src/remove-empty-keys";
 
 test("removeEmptyKeys", () => {
   const result = removeEmptyKeys({

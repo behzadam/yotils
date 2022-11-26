@@ -1,4 +1,4 @@
-import isEqual from "../src/isEqual";
+import isEqual from "../src/is-equal";
 
 const validCases = test.each`
   target                      | other                       | expected
