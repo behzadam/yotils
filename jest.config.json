@@ -4,5 +4,10 @@
   "testPathIgnorePatterns": ["/lib/", "/dist/", "/node_modules/"],
   "moduleNameMapper": {
     "^@lib": "<rootDir>/src/index.ts"
+  },
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.json"
+    }
   }
 }
