@@ -3,7 +3,7 @@
  * The last chunk may be smaller.
  * @param input - string
  * @param chunkSize - number
- * @returns Array of chunks.
+ * @returns Array of chunks or an empty array.
  * @example
  * ```ts
  *  const chunks: string[] = toChunks("Lorem ipsum dolor sit amet, consectetur adipis", 4);
