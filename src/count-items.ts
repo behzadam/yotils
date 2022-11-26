@@ -3,11 +3,11 @@ import { Primitive } from "@lib/types";
  * Counts of repeated items.
  * @param array - array of items.
  * @returns - key value list
- * @beta
- * #### Usage
+ * @example
  * ```ts
  * countItems(["in", "love", "love", "love"]) // { in: 1, love: 3 }
  * ```
+ * @beta
  */
 function countItems<T extends Primitive>(array: T[]): Record<string, T> {
   return array.reduce((acc: any, current) => {
