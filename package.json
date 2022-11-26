@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Typescript utils",
   "main": "./lib/index.js",
-  "typings": "./lib/index.d.ts",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
