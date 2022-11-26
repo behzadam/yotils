@@ -25,5 +25,10 @@
     }
   },
   "exclude": ["./lib/**/*", "./node_modules/**/*"],
-  "include": ["./src/**/*.ts", "./src/index.ts", "__tests__/**/*.ts"]
+  "include": [
+    "./src/**/*.ts",
+    "./src/index.ts",
+    "__tests__/**/*.ts",
+    "./jest.config.ts"
+  ]
 }
