@@ -1,4 +1,4 @@
-import { Primitive } from "@lib/types";
+import { Primitive } from "./types";
 /**
  * Counts of repeated items in flattened arrays.
  * @param array - array of items.
