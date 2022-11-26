@@ -1,5 +1,5 @@
 import { describeGen } from "./utils/describe-gen";
-import wrapInArray from "../src/array/wrapInArray";
+import { wrapInArray } from "@lib";
 
 const validCases = test.each`
   target | expected
@@ -7,6 +7,7 @@ const validCases = test.each`
   ${1}   | ${[1]}
   ${[1]} | ${[[1]]}
 `;
+
 describe(describeGen(wrapInArray.name).valid, () => {
   validCases(
     "should return $expected when target is $target",
