@@ -1,29 +1,7 @@
 {
-  "extends": "@tsconfig/node12/tsconfig.json",
+  "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "resolveJsonModule": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "noUncheckedIndexedAccess": true,
-    "downlevelIteration": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "allowUnreachableCode": false,
-    "noFallthroughCasesInSwitch": true,
-    "outDir": "lib",
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": false,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
-    "paths": {
-      "@lib": ["./src/index.ts"]
-    }
+    "types": ["node", "jest"]
   },
-  "exclude": ["lib", "dist", "./node_modules"],
-  "include": ["./src/**/*.ts"]
+  "include": ["src/**/*.ts", "__tests__/**/*.ts"]
 }
