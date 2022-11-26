@@ -1,4 +1,4 @@
-import splitIntoChunks from "../src/split-into-chunks";
+import splitIntoChunks from "../src/to-chunks";
 
 describe("splitIntoChunks", () => {
   test("should return array of chunks or an empty array", () => {
