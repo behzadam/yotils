@@ -4,7 +4,7 @@
  * @param key
  * @returns record
  */
-function toRecord<T extends { [K in keyof T]: any }, K extends keyof T>(
+export function toRecord<T extends { [K in keyof T]: any }, K extends keyof T>(
   array: Array<T>,
   key: K
 ): Record<K, T> {
@@ -13,5 +13,3 @@ function toRecord<T extends { [K in keyof T]: any }, K extends keyof T>(
     return record;
   }, {} as Record<K, T>);
 }
-
-export default toRecord;

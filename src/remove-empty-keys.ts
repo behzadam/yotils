@@ -1,4 +1,4 @@
-function removeEmptyKeys(input: Record<any, any>): Record<any, any> {
+export function removeEmptyKeys(input: Record<any, any>): Record<any, any> {
   return Object.keys(input)
     .filter((key) => input[key] !== "")
     .reduce((result, key) => {
@@ -8,5 +8,3 @@ function removeEmptyKeys(input: Record<any, any>): Record<any, any> {
       };
     }, {});
 }
-
-export default removeEmptyKeys;

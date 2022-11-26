@@ -10,10 +10,8 @@
  * ```
  * @public
  */
-function toChunks(input: string, chunkSize: number): string[] {
+export function toChunks(input: string, chunkSize: number): string[] {
   const chunkCount = Math.ceil(input.length / chunkSize);
   const regexp = new RegExp(`.{1,${chunkCount}}`, "g");
   return input.match(regexp) ?? [];
 }
-
-export default toChunks;

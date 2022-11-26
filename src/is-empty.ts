@@ -1,8 +1,10 @@
-import isArray from "../array/isArray";
-import isObject from "./is-object";
-import isString from "./is-string";
+import { isArray } from "./is-array";
+import { isObject } from "./is-object";
+import { isString } from "./is-string";
 
-function isEmpty<T extends string | object | any[]>(value: T): value is never {
+export function isEmpty<T extends string | object | any[]>(
+  value: T
+): value is never {
   if (isString(value) || isArray(value)) {
     return value.length === 0;
   }
@@ -17,5 +19,3 @@ function isEmpty<T extends string | object | any[]>(value: T): value is never {
     }`
   );
 }
-
-export default isEmpty;

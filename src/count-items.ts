@@ -9,11 +9,9 @@ import { Primitive } from "@lib/types";
  * ```
  * @beta
  */
-function countItems<T extends Primitive>(array: T[]): Record<string, T> {
+export function countItems<T extends Primitive>(array: T[]): Record<string, T> {
   return array.reduce((acc: any, current) => {
     acc[current] = !acc[current] ? 1 : ++acc[current];
     return acc;
   }, {} as Record<string, T>);
 }
-
-export default countItems;

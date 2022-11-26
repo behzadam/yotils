@@ -1,5 +1,3 @@
-function isEqual<T>(target: T, other: T): boolean {
+export function isEqual<T>(target: T, other: T): boolean {
   return target === other;
 }
-
-export default isEqual;
