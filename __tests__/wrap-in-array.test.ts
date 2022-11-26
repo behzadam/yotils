@@ -1,5 +1,5 @@
-import { describeGen } from "./utils/describe-gen";
 import { wrapInArray } from "@lib";
+import { describeGen } from "./utils/describe-gen";
 
 const validCases = test.each`
   target | expected

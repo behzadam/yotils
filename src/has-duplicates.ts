@@ -1,7 +1,12 @@
-function hasDuplicates(array: number[]): array is number[];
-function hasDuplicates(array: string[]): array is string[];
-function hasDuplicates(array: any[]): array is any[] {
+import { Primitive } from "./types";
+
+/**
+ * Determines whether an array has duplicates.
+ * @param array - string | number | boolean
+ * @returns boolean
+ *
+ * @beta
+ */
+export function hasDuplicates<T extends keyof Primitive>(array: T[]): boolean {
   return new Set(array).size < array.length;
 }
-
-export default hasDuplicates;

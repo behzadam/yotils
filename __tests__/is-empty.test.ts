@@ -1,4 +1,4 @@
-import isEmpty from "../src/is-empty";
+import { isEmpty } from "@lib";
 import { describeGen } from "./utils/describe-gen";
 
 describe(describeGen(isEmpty.name).valid, () => {

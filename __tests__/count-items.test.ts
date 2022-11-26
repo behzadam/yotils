@@ -1,4 +1,4 @@
-import countItems from "@lib/count-items";
+import { countItems } from "@lib";
 
 const validCases = test.each`
   input                             | expected

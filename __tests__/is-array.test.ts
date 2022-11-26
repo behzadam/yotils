@@ -1,4 +1,4 @@
-import isArray from "../src/array/isArray";
+import { isArray } from "@lib";
 import { describeGen } from "./utils/describe-gen";
 
 const validCases = test.each`

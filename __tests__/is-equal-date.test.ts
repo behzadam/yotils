@@ -1,4 +1,4 @@
-import { isEqualDate } from "@lib/is-equal-date";
+import { isEqualDate } from "@lib";
 import { describeGen } from "./utils/describe-gen";
 
 describe(describeGen(isEqualDate.name).valid, () => {

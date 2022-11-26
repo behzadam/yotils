@@ -1,4 +1,4 @@
-import { areSame } from "@lib/are-same";
+import { areSame } from "@lib";
 
 const validCases = test.each`
   input                    | expected

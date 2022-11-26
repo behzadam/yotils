@@ -1,4 +1,4 @@
-import isDate from "../src/date/isDate";
+import { isDate } from "@lib";
 import { describeGen } from "./utils/describe-gen";
 
 describe(describeGen(isDate.name).valid, () => {
