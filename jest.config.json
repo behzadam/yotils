@@ -2,5 +2,6 @@
   "transform": {
     "^.+\\.ts?$": "ts-jest"
   },
-  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts?)$"
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts?)$",
+  "testPathIgnorePatterns": ["/lib/", "/dist/", "/node_modules/"]
 }
