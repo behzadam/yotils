@@ -5,10 +5,65 @@
 ```ts
 
 // @beta
+export function areSame<T extends string | number | boolean>(arr: Required<T[]>): boolean;
+
+// Warning: (ae-forgotten-export) The symbol "Primitive" needs to be exported by the entry point index.d.ts
+//
+// @beta
+export function countItems<T extends Primitive>(array: T[]): Record<string, T>;
+
+// @beta
+export function hasDuplicates<T extends keyof Primitive>(array: T[]): boolean;
+
+// @public (undocumented)
+export function isArray<T>(value: any): value is Array<T>;
+
+// @public (undocumented)
+export function isDate(value: any): value is Date;
+
+// @public (undocumented)
+export function isDateValid(value: string): value is string;
+
+// @public (undocumented)
+export function isDefined<T>(value: T): value is NonNullable<T>;
+
+// @public (undocumented)
+export function isEmpty<T extends string | object | any[]>(value: T): value is never;
+
+// @public (undocumented)
+export function isEqual<T>(target: T, other: T): boolean;
+
+// @beta
+export function isEqualDate(target: Required<Date>, other: Required<Date>): boolean;
+
+// @public (undocumented)
 export function isMap(value: Required<any>): value is Map<any, any>;
 
-// @public
+// @public (undocumented)
 export function isNumber(input: any): input is number;
+
+// @public (undocumented)
+export function isObject(value: any): value is object;
+
+// @public (undocumented)
+export function isSet(value: Required<any>): value is Set<any>;
+
+// @public (undocumented)
+export function isString(input: any): input is string;
+
+// @public (undocumented)
+export function removeEmptyKeys(input: Record<any, any>): Record<any, any>;
+
+// @public
+export function toChunks(input: string, chunkSize: number): string[];
+
+// @public
+export function toRecord<T extends {
+    [K in keyof T]: any;
+}, K extends keyof T>(array: Array<T>, key: K): Record<K, T>;
+
+// @public (undocumented)
+export function wrapInArray<Type>(input: Type): Type[];
 
 // (No @packageDocumentation comment for this package)
 
