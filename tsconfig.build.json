@@ -12,6 +12,7 @@
     "outDir": "dist",
     "declaration": true,
     "declarationMap": true,
+    "declarationDir": "dist/dts",
     "module": "commonjs",
     "target": "ES5",
     "sourceMap": true,
