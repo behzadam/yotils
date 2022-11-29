@@ -3,7 +3,7 @@ export { countItems } from "./count-items";
 export { hasDuplicates } from "./has-duplicates";
 export { isArray } from "./is-array";
 export { isDate } from "./is-date";
-export { isDateValid } from "./is-date-valid";
+export { isDateString as isDateValid } from "./is-date-string";
 export { isDefined } from "./is-defined";
 export { isEmpty } from "./is-empty";
 export { isEqual } from "./is-equal";
