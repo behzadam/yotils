@@ -14,7 +14,7 @@
     "lint": "eslint .",
     "generate": "yarn api-extractor run --local",
     "docs": "yarn api-documenter markdown -i temp -o docs",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist lib",
     "build": "tsc -p tsconfig.build.json"
   },
   "repository": {
