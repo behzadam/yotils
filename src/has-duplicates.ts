@@ -5,7 +5,7 @@ import { Primitive } from "./types";
  * @param array - input
  * @returns true if array has duplicates, false otherwise.
  *
- * @beta
+ * @public
  */
 export function hasDuplicates<T extends keyof Primitive>(array: T[]): boolean {
   return new Set(array).size < array.length;
