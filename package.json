@@ -6,7 +6,7 @@
   "typings": "./dist/index.d.ts",
   "files": [
     "src",
-    "esm",
+    "lib",
     "dist"
   ],
   "scripts": {
