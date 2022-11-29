@@ -1,9 +1,11 @@
 import { isDate } from "@lib";
-import { describeGen } from "./utils/describe-gen";
 
-describe(describeGen(isDate.name).valid, () => {
-  test("should return true on date type", () => {
-    expect(isDate(new Date())).toBe(true);
-    expect(isDate("2021-10-10")).toBe(false);
+describe("isDate cases", () => {
+  test.each`
+    input            | expected
+    ${new Date()}    | ${true}
+    ${"29 Feb 2020"} | ${false}
+  `("should return $expected when input is: $input", ({ input, expected }) => {
+    expect(isDate(input)).toBe(expected);
   });
 });
