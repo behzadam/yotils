@@ -7,6 +7,7 @@ import { Primitive } from "./types";
  * @example
  * ```ts
  * hasDuplicates(["one", "one", "two"]) // true
+ * hasDuplicates([1, 2, 3, 3]) // true
  * hasDuplicates(["one", "two", "three"]) // false
  * ```
  *
