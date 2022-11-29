@@ -9,7 +9,7 @@
  * isArray([{ id: 1 }, { id: 2 }]) // true
  * isArray('Is an array?') // false
  * ```
- * @beta
+ * @public
  */
 export function isArray<T>(value: unknown): value is Array<T> {
   return Array.isArray(value);
