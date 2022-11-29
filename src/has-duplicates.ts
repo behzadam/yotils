@@ -2,8 +2,8 @@ import { Primitive } from "./types";
 
 /**
  * Determines whether an array has duplicates.
- * @param array - string | number | boolean
- * @returns boolean
+ * @param array - input
+ * @returns true if array has duplicates, false otherwise.
  *
  * @beta
  */
