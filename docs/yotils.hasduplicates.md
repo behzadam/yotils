@@ -4,19 +4,26 @@
 
 ## hasDuplicates() function
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Determines whether an array has duplicates.
+
 <b>Signature:</b>
 
 ```typescript
-declare function hasDuplicates(array: number[]): array is number[];
+export declare function hasDuplicates<T extends keyof Primitive>(array: T[]): boolean;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  array | number\[\] |  |
+|  array | T\[\] | string \| number \| boolean |
 
 <b>Returns:</b>
 
-array is number\[\]
+boolean
+
+boolean
 

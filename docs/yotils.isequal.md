@@ -7,7 +7,7 @@
 <b>Signature:</b>
 
 ```typescript
-declare function isEqual<T>(target: T, other: T): boolean;
+export declare function isEqual<T>(target: T, other: T): boolean;
 ```
 
 ## Parameters

@@ -7,7 +7,7 @@
 <b>Signature:</b>
 
 ```typescript
-declare function wrapInArray<Type>(input: Type): Type[];
+export declare function wrapInArray<Type>(input: Type): Type[];
 ```
 
 ## Parameters

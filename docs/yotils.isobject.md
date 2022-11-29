@@ -7,7 +7,7 @@
 <b>Signature:</b>
 
 ```typescript
-declare function isObject(value: any): value is object;
+export declare function isObject(value: any): value is object;
 ```
 
 ## Parameters

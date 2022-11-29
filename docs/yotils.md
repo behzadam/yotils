@@ -8,17 +8,23 @@
 
 |  Function | Description |
 |  --- | --- |
-|  [areSame(arr)](./yotils.aresame.md) |  |
-|  [countItems(array)](./yotils.countitems.md) |  |
-|  [hasDuplicates(array)](./yotils.hasduplicates.md) |  |
-|  [hasDuplicates(array)](./yotils.hasduplicates_1.md) |  |
+|  [areSame(arr)](./yotils.aresame.md) | <b><i>(BETA)</i></b> Compares all items in the given array and returns true if they are same. |
+|  [countItems(array)](./yotils.countitems.md) | <b><i>(BETA)</i></b> Counts of repeated items in flattened arrays. |
+|  [hasDuplicates(array)](./yotils.hasduplicates.md) | <b><i>(BETA)</i></b> Determines whether an array has duplicates. |
 |  [isArray(value)](./yotils.isarray.md) |  |
 |  [isDate(value)](./yotils.isdate.md) |  |
 |  [isDateValid(value)](./yotils.isdatevalid.md) |  |
+|  [isDefined(value)](./yotils.isdefined.md) |  |
+|  [isEmpty(value)](./yotils.isempty.md) |  |
 |  [isEqual(target, other)](./yotils.isequal.md) |  |
+|  [isEqualDate(target, other)](./yotils.isequaldate.md) | <b><i>(BETA)</i></b> Compares two given date type values. |
 |  [isMap(value)](./yotils.ismap.md) |  |
 |  [isNumber(input)](./yotils.isnumber.md) |  |
 |  [isObject(value)](./yotils.isobject.md) |  |
 |  [isSet(value)](./yotils.isset.md) |  |
+|  [isString(input)](./yotils.isstring.md) |  |
+|  [removeEmptyKeys(input)](./yotils.removeemptykeys.md) |  |
+|  [toChunks(input, chunkSize)](./yotils.tochunks.md) | Split a string into N chunks of equal size. The last chunk may be smaller. |
+|  [toRecord(array, key)](./yotils.torecord.md) | Generates key value list from an array of objects |
 |  [wrapInArray(input)](./yotils.wrapinarray.md) |  |
 

@@ -7,7 +7,7 @@
 <b>Signature:</b>
 
 ```typescript
-declare function isNumber(input: any): input is number;
+export declare function isNumber(input: any): input is number;
 ```
 
 ## Parameters

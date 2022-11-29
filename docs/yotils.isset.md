@@ -7,7 +7,7 @@
 <b>Signature:</b>
 
 ```typescript
-declare function isSet(value: Required<any>): value is Set<any>;
+export declare function isSet(value: Required<any>): value is Set<any>;
 ```
 
 ## Parameters

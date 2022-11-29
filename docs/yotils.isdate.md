@@ -7,7 +7,7 @@
 <b>Signature:</b>
 
 ```typescript
-declare function isDate(value: any): value is Date;
+export declare function isDate(value: any): value is Date;
 ```
 
 ## Parameters

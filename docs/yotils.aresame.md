@@ -4,19 +4,34 @@
 
 ## areSame() function
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
+Compares all items in the given array and returns true if they are same.
+
 <b>Signature:</b>
 
 ```typescript
-declare function areSame<T extends string | number | boolean>(arr: Required<T[]>): boolean;
+export declare function areSame<T extends string | number | boolean>(arr: Required<T[]>): boolean;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  arr | Required&lt;T\[\]&gt; |  |
+|  arr | Required&lt;T\[\]&gt; | Given array. |
 
 <b>Returns:</b>
 
 boolean
+
+- true \| false
+
+\#\#\#\# Usage
+
+```ts
+areSame([1, 1, 1, 1]) // true
+areSame(["one", "one", "one"]) // true
+areSame([1, 2]) // false
+```
 

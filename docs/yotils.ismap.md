@@ -7,7 +7,7 @@
 <b>Signature:</b>
 
 ```typescript
-declare function isMap(value: Required<any>): value is Map<any, any>;
+export declare function isMap(value: Required<any>): value is Map<any, any>;
 ```
 
 ## Parameters
