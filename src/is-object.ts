@@ -1,3 +1,4 @@
-export function isObject(value: any): value is object {
-  return typeof value === "object";
+export function isObject<T>(value: T): value is T {
+  const type = typeof value;
+  return value != null && (type === "object" || type === "function");
 }
