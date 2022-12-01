@@ -3,6 +3,8 @@ import { isObject } from "./is-object";
 import { isString } from "./is-string";
 
 export function isEmpty<T>(value: T): value is T {
+  if (value == null) return true;
+
   if (isString(value) || isArray(value)) {
     return value.length === 0;
   }
@@ -11,9 +13,5 @@ export function isEmpty<T>(value: T): value is T {
     return Object.keys(value).length === 0;
   }
 
-  throw new Error(
-    `value must be type of string | array | object. ${
-      value === null ? "null" : typeof value
-    }`
-  );
+  return true;
 }
