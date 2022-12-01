@@ -8,6 +8,8 @@ describe("isObject cases", () => {
     ${Function}  | ${true}
     ${[1, 2, 3]} | ${true}
     ${null}      | ${false}
+    ${1}         | ${false}
+    ${true}      | ${false}
   `("should return $expected when input is: $input", ({ input, expected }) => {
     expect(isObject(input)).toBe(expected);
   });
