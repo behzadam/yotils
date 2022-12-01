@@ -6,6 +6,9 @@ describe("isEmpty cases", () => {
     ${[]}        | ${true}
     ${{}}        | ${true}
     ${""}        | ${true}
+    ${null}      | ${true}
+    ${true}      | ${true}
+    ${1}         | ${true}
     ${{ id: 1 }} | ${false}
     ${[1]}       | ${false}
     ${"1"}       | ${false}
