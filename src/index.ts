@@ -17,3 +17,4 @@ export { removeEmptyKeys } from "./remove-empty-keys";
 export { toChunks } from "./to-chunks";
 export { toRecord } from "./to-record";
 export { wrapInArray } from "./wrap-in-array";
+export { getLength } from "./get-length";
