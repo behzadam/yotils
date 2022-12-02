@@ -2,7 +2,12 @@ import { isArray } from "./is-array";
 import { isObject } from "./is-object";
 import { isString } from "./is-string";
 
-export default function getLength<T>(value: T): number {
+/**
+ * Gets length of string | array | object
+ * @param value - string | array | object
+ * @returns length of the input or 0
+ */
+export function getLength<T>(value: T): number {
   if (isString(value) || isArray(value)) {
     return value.length;
   }
