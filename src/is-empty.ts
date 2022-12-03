@@ -6,15 +6,15 @@ import { getLength } from "./get-length";
  * @returns true if the input is empty, false otherwise.
  * @example
  * ```ts
- *  []       | ${true}
- *  {}       | ${true}
- *  ""       | ${true}
- *  null     | ${true}
- *  true     | ${true}
- *  1        | ${true}
- *  id: 1    | ${false}
- *  [1]      | ${false}
- *  "1"      | ${false}
+ *  isEmpty([])     // true
+ *  isEmpty({})     // true
+ *  isEmpty("")     // true
+ *  isEmpty(null)   // true
+ *  isEmpty(true)   // true
+ *  isEmpty(1)      // true
+ *  isEmpty({id:1}) // false
+ *  isEmpty([1])    // false
+ *  isEmpty("1")    // false
  * ```
  * @public
  */
