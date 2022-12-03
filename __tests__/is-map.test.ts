@@ -1,6 +1,6 @@
 import { isMap } from "@lib";
 
-describe("isObject cases", () => {
+describe("isMap cases", () => {
   test.each`
     input                        | expected
     ${new Map<string, number>()} | ${true}
