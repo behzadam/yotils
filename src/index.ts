@@ -11,6 +11,7 @@ export { isEqualDate } from "./is-equal-date";
 export { isMap } from "./is-map";
 export { isNumber } from "./is-number";
 export { isObject } from "./is-object";
+export { isObjectLike } from "./is-object-like";
 export { isSet } from "./is-set";
 export { isString } from "./is-string";
 export { removeEmptyKeys } from "./remove-empty-keys";
