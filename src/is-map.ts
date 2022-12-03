@@ -1,3 +1,3 @@
-export function isMap(value: Required<any>): value is Map<any, any> {
+export function isMap<T>(value: T): value is T {
   return value instanceof Map;
 }
