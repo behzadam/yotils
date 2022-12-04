@@ -14,6 +14,7 @@ export { isObject } from "./is-object";
 export { isObjectLike } from "./is-object-like";
 export { isSet } from "./is-set";
 export { isString } from "./is-string";
+export { isNull } from "./is-null";
 export { removeEmptyKeys } from "./remove-empty-keys";
 export { toChunks } from "./to-chunks";
 export { toRecord } from "./to-record";
