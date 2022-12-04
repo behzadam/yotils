@@ -10,6 +10,7 @@ import { isObjectLike } from "./is-object-like";
  * isSet(new Set()) // true
  * isSet([])        // false
  * ```
+ * @public
  */
 export function isSet<T>(value: T): value is T {
   return isObjectLike(value) && getTag(value) === "[object Set]";
