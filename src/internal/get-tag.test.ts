@@ -1,6 +1,6 @@
 import { getTag } from "./index";
 
-describe("isNumber cases", () => {
+describe("getTag cases", () => {
   test.each`
     input        | expected
     ${new Set()} | ${"[object Set]"}
