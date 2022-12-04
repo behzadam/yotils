@@ -20,11 +20,7 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": false,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
-    "paths": {
-      "@lib": ["./src/index.ts"]
-    }
+    "forceConsistentCasingInFileNames": true
   },
   "exclude": ["lib", "dist", "./node_modules"],
   "include": ["./src/**/*.ts"]
