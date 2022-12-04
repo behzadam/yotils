@@ -1,4 +1,4 @@
-import { isDateValid } from "@lib";
+import { isDateValid } from "./";
 
 describe("isDateValid valid cases", () => {
   test.each`

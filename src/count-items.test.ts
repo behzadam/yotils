@@ -1,4 +1,4 @@
-import { countItems } from "@lib";
+import { countItems } from "./";
 
 describe("countItems cases", () => {
   test.each`

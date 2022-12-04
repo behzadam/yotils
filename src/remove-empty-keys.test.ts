@@ -1,4 +1,4 @@
-import { removeEmptyKeys } from "@lib";
+import { removeEmptyKeys } from "./";
 
 test("removeEmptyKeys", () => {
   const result = removeEmptyKeys({

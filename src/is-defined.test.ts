@@ -1,4 +1,4 @@
-import { isDefined } from "@lib";
+import { isDefined } from "./";
 
 describe("isDefined cases", () => {
   test.each`

@@ -1,4 +1,4 @@
-import { isEmpty } from "@lib";
+import { isEmpty } from "./";
 
 describe("isEmpty cases", () => {
   test.each`

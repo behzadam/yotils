@@ -1,4 +1,4 @@
-import { isNumber } from "@lib";
+import { isNumber } from "./";
 
 describe("isNumber cases", () => {
   test.each`

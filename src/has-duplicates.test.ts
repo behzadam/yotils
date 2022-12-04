@@ -1,4 +1,4 @@
-import { hasDuplicates } from "@lib";
+import { hasDuplicates } from "./";
 
 describe("hasDuplicates cases", () => {
   test.each`

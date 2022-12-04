@@ -1,4 +1,4 @@
-import { isArray } from "@lib";
+import { isArray } from "./";
 
 describe("isArray cases", () => {
   test.each`

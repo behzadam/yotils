@@ -1,4 +1,4 @@
-import { isMap } from "@lib";
+import { isMap } from "./";
 
 describe("isMap cases", () => {
   test.each`

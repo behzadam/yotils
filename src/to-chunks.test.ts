@@ -1,4 +1,4 @@
-import { toChunks } from "@lib";
+import { toChunks } from "./";
 
 describe("splitIntoChunks", () => {
   test("should return array of chunks or an empty array", () => {

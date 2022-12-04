@@ -1,4 +1,4 @@
-import { getLength } from "@lib";
+import { getLength } from "./";
 
 describe("getLength cases", () => {
   test.each`

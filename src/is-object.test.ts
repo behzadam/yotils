@@ -1,4 +1,4 @@
-import { isObject } from "@lib";
+import { isObject } from "./";
 
 describe("isObject cases", () => {
   test.each`

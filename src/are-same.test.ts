@@ -1,4 +1,4 @@
-import { areSame } from "@lib";
+import { areSame } from "./";
 
 describe("areSame valid cases", () => {
   test.each`
