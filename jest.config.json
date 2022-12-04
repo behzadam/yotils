@@ -2,9 +2,6 @@
   "preset": "ts-jest",
   "testEnvironment": "node",
   "testPathIgnorePatterns": ["/lib/", "/dist/", "/node_modules/"],
-  "moduleNameMapper": {
-    "^@lib": "<rootDir>/src/index.ts"
-  },
   "transform": {
     "^.+\\.ts?$": [
       "ts-jest",
