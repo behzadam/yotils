@@ -5,9 +5,12 @@
   "moduleNameMapper": {
     "^@lib": "<rootDir>/src/index.ts"
   },
-  "globals": {
-    "ts-jest": {
-      "tsconfig": "tsconfig.json"
-    }
+  "transform": {
+    "^.+\\.ts?$": [
+      "ts-jest",
+      {
+        "tsconfig": "tsconfig.json"
+      }
+    ]
   }
 }
