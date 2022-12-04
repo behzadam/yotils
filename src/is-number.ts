@@ -4,13 +4,13 @@
  * @returns true if the input is number, false otherwise.
  * @example
  * ```ts
- * isNumber(1)     // true
- * isNumber({})    // false
- * isNumber([])    // false
- * isNumber(true)  // false
+ * isNumber(1)           // true
+ * isNumber(NaN)         // false
+ * isNumber(Infinity)    // false
+ * isNumber("1")         // false
  * ```
  * @public
  */
 export function isNumber(value: unknown): value is number {
-  return typeof value === "number";
+  return Number.isFinite(value);
 }
