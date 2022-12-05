@@ -2,6 +2,7 @@ export { areSame } from "./are-same";
 export { countItems } from "./count-items";
 export { hasDuplicates } from "./has-duplicates";
 export { isArray } from "./is-array";
+export { isArrayOfString } from "./is-array-of-string";
 export { isDate } from "./is-date";
 export { isDateString as isDateValid } from "./is-date-string";
 export { isDefined } from "./is-defined";
