@@ -1,15 +1,9 @@
-/**
- * Generates key value list from an array of objects
- * @param array
- * @param key
- * @returns record
- */
-export function toRecord<T extends { [K in keyof T]: any }, K extends keyof T>(
-  array: Array<T>,
-  key: K
-): Record<K, T> {
-  return array.reduce((record, current) => {
-    record[current[key]] = current;
-    return record;
-  }, {} as Record<K, T>);
+export function toRecord<
+  T extends { [K in keyof T]: string | number | symbol },
+  K extends keyof T
+>(array: T[], key: K): Record<T[K], T> {
+  return array.reduce(
+    (acc, item) => ({ ...acc, [item[key]]: item }),
+    {} as Record<T[K], T>
+  );
 }
