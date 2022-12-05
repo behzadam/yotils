@@ -1,18 +1,12 @@
-import { wrapInArray } from "./";
-import { describeGen } from "./utils/describe-gen";
+import { wrapInArray } from ".";
 
-const validCases = test.each`
-  target | expected
-  ${"A"} | ${["A"]}
-  ${1}   | ${[1]}
-  ${[1]} | ${[[1]]}
-`;
-
-describe(describeGen(wrapInArray.name).valid, () => {
-  validCases(
-    "should return $expected when target is $target",
-    ({ target, expected }) => {
-      expect(wrapInArray(target)).toStrictEqual(expected);
-    }
-  );
+describe("wrapInArray cases", () => {
+  test.each`
+    input    | expected
+    ${"a"}   | ${["a"]}
+    ${1}     | ${[1]}
+    ${["a"]} | ${[["a"]]}
+  `("should return $expected when input is: $input", ({ input, expected }) => {
+    expect(wrapInArray(input)).toEqual(expected);
+  });
 });
