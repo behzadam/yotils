@@ -18,6 +18,6 @@ export { isString } from "./is-string";
 export { isNull } from "./is-null";
 export { removeEmptyKeys } from "./remove-empty-keys";
 export { toChunks } from "./to-chunks";
-export { toRecord } from "./to-record";
+export { indexBy } from "./index-by";
 export { wrapInArray } from "./wrap-in-array";
 export { getLength } from "./get-length";

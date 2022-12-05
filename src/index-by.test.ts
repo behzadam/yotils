@@ -1,6 +1,6 @@
-import { toRecord } from "./";
+import { indexBy } from ".";
 
-describe("toRecord cases", () => {
+describe("indexBy cases", () => {
   const input = [
     { id: 1, name: "A" },
     { id: 2, name: "B" },
@@ -17,6 +17,6 @@ describe("toRecord cases", () => {
     input    | expected
     ${input} | ${expected}
   `("should return $expected when input is: $input", ({ input, expected }) => {
-    expect(toRecord([...input], "id")).toStrictEqual(expected);
+    expect(indexBy([...input], "id")).toStrictEqual(expected);
   });
 });

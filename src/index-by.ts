@@ -1,4 +1,4 @@
-export function toRecord<
+export function indexBy<
   T extends { [K in keyof T]: string | number | symbol },
   K extends keyof T
 >(array: T[], key: K): Record<T[K], T> {
