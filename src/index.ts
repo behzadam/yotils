@@ -16,7 +16,7 @@ export { isObjectLike } from "./is-object-like";
 export { isSet } from "./is-set";
 export { isString } from "./is-string";
 export { isNull } from "./is-null";
-export { removeEmptyKeys } from "./remove-empty-keys";
+export { omitBy } from "./omit-by";
 export { toChunks } from "./to-chunks";
 export { indexBy } from "./index-by";
 export { wrapInArray } from "./wrap-in-array";
