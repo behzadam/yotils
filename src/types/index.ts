@@ -1,1 +1,1 @@
-export { Primitive } from "./primitive";
+export type Primitive = string | number | boolean;
