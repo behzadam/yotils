@@ -1,10 +1,11 @@
-import { Dictionary, PredicateFunction } from "./types";
+import { PredicateFunction, AnyObject } from "./types";
 
-export function omitBy<T extends Dictionary<T>>(
-  object: T,
-  fun: PredicateFunction
-): Dictionary<T> {
+/**
+ * Omits by
+ * @alpha
+ */
+export function omitBy(object: AnyObject, fun: PredicateFunction): AnyObject {
   return Object.keys(object)
-    .filter((key) => !fun(object[key], key))
-    .reduce((acc, key) => ((acc[key] = object[key]), acc), {} as Dictionary<T>);
+    .filter((key) => !fun(key, object[key]))
+    .reduce((acc, key) => ((acc[key] = object[key]), acc), {} as AnyObject);
 }
