@@ -13,7 +13,7 @@
  * toChunks("Lor", 4);
  * // [ 'L', 'o', 'r' ]
  * ```
- * @public
+ * @beta
  */
 export function toChunks(input: string, chunkSize: number): string[] {
   const chunkCount = Math.ceil(input.length / chunkSize);
