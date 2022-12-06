@@ -6,7 +6,12 @@
  * @returns Array of chunks or an empty array.
  * @example
  * ```ts
- *  const chunks: string[] = toChunks("Lorem ipsum dolor sit amet, consectetur adipis", 4);
+ *  toChunks("Lorem ipsum dolor sit amet, consectetur adipis", 4);
+ * // ['Lorem ipsum ', 'dolor sit am', 'et, consecte', 'tur adipis' ]
+ *  toChunks("Lorem ipsum", 4);
+ * // [ 'Lor', 'em ', 'ips', 'um' ]
+ * toChunks("Lor", 4);
+ * // [ 'L', 'o', 'r' ]
  * ```
  * @public
  */
