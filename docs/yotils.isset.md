@@ -4,19 +4,31 @@
 
 ## isSet() function
 
+Determines whether the input is `Set` or not.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function isSet(value: Required<any>): value is Set<any>;
+export declare function isSet<T>(value: T): value is T;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | Required&lt;any&gt; |  |
+|  value | T | input. |
 
 <b>Returns:</b>
 
-value is Set&lt;any&gt;
+value is T
+
+true if the input is `Set`<!-- -->, false otherwise.
+
+## Example
+
+
+```ts
+isSet(new Set()) // true
+isSet([])        // false
+```
 

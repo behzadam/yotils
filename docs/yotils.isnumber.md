@@ -4,19 +4,33 @@
 
 ## isNumber() function
 
+Determines whether an input is number or not.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function isNumber(input: any): input is number;
+export declare function isNumber(value: unknown): value is number;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  input | any |  |
+|  value | unknown | input |
 
 <b>Returns:</b>
 
-input is number
+value is number
+
+true if the input is number, false otherwise.
+
+## Example
+
+
+```ts
+isNumber(1)           // true
+isNumber(NaN)         // false
+isNumber(Infinity)    // false
+isNumber("1")         // false
+```
 

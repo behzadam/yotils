@@ -4,19 +4,35 @@
 
 ## isDateValid() function
 
+Determines whether the input string is valid date or not.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function isDateValid(value: string): value is string;
+export declare function isDateString(value: string): value is string;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | string |  |
+|  value | string | input string. |
 
 <b>Returns:</b>
 
 value is string
+
+true if the input string is valid date, false otherwise.
+
+## Remarks
+
+While there are some regular expressions that allow date validations, it is better to validate dates using special date and time libraries like momentjs. RegEx is from: https://regex101.com/r/IuYz9V/1
+
+## Example
+
+
+```ts
+isDateString('01/01/2000') // true
+isDateString('31/09/2000') // false
+```
 

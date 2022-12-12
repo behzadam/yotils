@@ -4,19 +4,33 @@
 
 ## isArray() function
 
+Determines whether the input is an array or not.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function isArray<T>(value: any): value is Array<T>;
+export declare function isArray<T>(value: unknown): value is Array<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | any |  |
+|  value | unknown | Generic input. |
 
 <b>Returns:</b>
 
 value is Array&lt;T&gt;
+
+true if the input is an array or false otherwise.
+
+## Example
+
+
+```ts
+isArray([{ id: 1 }, { id: 2 }]) // true
+isArray(["one", "one"]) // true
+isArray([{ id: 1 }, { id: 2 }]) // true
+isArray('Is an array?') // false
+```
 

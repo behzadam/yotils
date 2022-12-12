@@ -4,19 +4,32 @@
 
 ## isMap() function
 
+Determines whether an input is a map or not.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function isMap(value: Required<any>): value is Map<any, any>;
+export declare function isMap<T>(value: T): value is T;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | Required&lt;any&gt; |  |
+|  value | T | input |
 
 <b>Returns:</b>
 
-value is Map&lt;any, any&gt;
+value is T
+
+true if the input is a map, false otherwise.
+
+## Example
+
+
+```ts
+ isMap(new Map<string, number>()) // true
+ isMap({ id: 1 })                 // false
+ isMap([1, 2, 3])                 // false
+```
 

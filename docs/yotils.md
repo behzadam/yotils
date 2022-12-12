@@ -8,23 +8,25 @@
 
 |  Function | Description |
 |  --- | --- |
-|  [areSame(arr)](./yotils.aresame.md) | <b><i>(BETA)</i></b> Compares all items in the given array and returns true if they are same. |
+|  [areSame(arr)](./yotils.aresame.md) | Compares all items in the given array and returns true if they are same. |
 |  [countItems(array)](./yotils.countitems.md) | <b><i>(BETA)</i></b> Counts of repeated items in flattened arrays. |
-|  [hasDuplicates(array)](./yotils.hasduplicates.md) | <b><i>(BETA)</i></b> Determines whether an array has duplicates. |
-|  [isArray(value)](./yotils.isarray.md) |  |
-|  [isDate(value)](./yotils.isdate.md) |  |
-|  [isDateValid(value)](./yotils.isdatevalid.md) |  |
-|  [isDefined(value)](./yotils.isdefined.md) |  |
-|  [isEmpty(value)](./yotils.isempty.md) |  |
-|  [isEqual(target, other)](./yotils.isequal.md) |  |
+|  [getLength(value)](./yotils.getlength.md) | Gets length of string \| array \| object |
+|  [hasDuplicates(array)](./yotils.hasduplicates.md) | Determines whether an array has duplicates. |
+|  [indexBy(array, key)](./yotils.indexby.md) | Returns the spilted lists grouped by index. They key should be unique and for ununique keys it would be replaced with the last key. |
+|  [isArray(value)](./yotils.isarray.md) | Determines whether the input is an array or not. |
+|  [isArrayOfString(value)](./yotils.isarrayofstring.md) | Determines whether the input is array of string or not. |
+|  [isDate(value)](./yotils.isdate.md) | Determines whether the input is a Date type or not. |
+|  [isDateValid(value)](./yotils.isdatevalid.md) | Determines whether the input string is valid date or not. |
+|  [isDefined(value)](./yotils.isdefined.md) | Determines whether the input is defined or not. |
+|  [isEmpty(value)](./yotils.isempty.md) | Determines whether an input is empty or not. |
 |  [isEqualDate(target, other)](./yotils.isequaldate.md) | <b><i>(BETA)</i></b> Compares two given date type values. |
-|  [isMap(value)](./yotils.ismap.md) |  |
-|  [isNumber(input)](./yotils.isnumber.md) |  |
-|  [isObject(value)](./yotils.isobject.md) |  |
-|  [isSet(value)](./yotils.isset.md) |  |
-|  [isString(input)](./yotils.isstring.md) |  |
-|  [removeEmptyKeys(input)](./yotils.removeemptykeys.md) |  |
-|  [toChunks(input, chunkSize)](./yotils.tochunks.md) | Split a string into N chunks of equal size. The last chunk may be smaller. |
-|  [toRecord(array, key)](./yotils.torecord.md) | Generates key value list from an array of objects |
-|  [wrapInArray(input)](./yotils.wrapinarray.md) |  |
+|  [isMap(value)](./yotils.ismap.md) | Determines whether an input is a map or not. |
+|  [isNull(value)](./yotils.isnull.md) | Determines whether an input is null or not. |
+|  [isNumber(value)](./yotils.isnumber.md) | Determines whether an input is number or not. |
+|  [isObject(value)](./yotils.isobject.md) | Determines whether the input is an object or not. |
+|  [isObjectLike(value)](./yotils.isobjectlike.md) | Determines whether the input is an object like or not. When a value is object like, it is not null and <code>typeof</code> result is "object". |
+|  [isSet(value)](./yotils.isset.md) | Determines whether the input is <code>Set</code> or not. |
+|  [isString(value)](./yotils.isstring.md) | Determines whether the input is string or not. |
+|  [toChunks(input, chunkSize)](./yotils.tochunks.md) | <b><i>(BETA)</i></b> Split a string into N chunks of equal size. The last chunk may be smaller. |
+|  [wrapInArray(value)](./yotils.wrapinarray.md) | Wraps the input in an array even if the input is an array. |
 

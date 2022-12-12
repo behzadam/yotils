@@ -4,19 +4,32 @@
 
 ## wrapInArray() function
 
+Wraps the input in an array even if the input is an array.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function wrapInArray<Type>(input: Type): Type[];
+export declare function wrapInArray<Type>(value: Type): Type[];
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  input | Type |  |
+|  value | Type | input |
 
 <b>Returns:</b>
 
 Type\[\]
+
+wrapped input in an array.
+
+## Example
+
+
+```ts
+wrapInArray('a')     // ['a']
+wrapInArray(1)       // [1]
+wrapInArray(['a'])   // [['a']]
+```
 

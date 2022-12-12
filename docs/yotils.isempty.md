@@ -4,19 +4,38 @@
 
 ## isEmpty() function
 
+Determines whether an input is empty or not.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function isEmpty<T extends string | object | any[]>(value: T): value is never;
+export declare function isEmpty<T>(value: T): value is T;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | T |  |
+|  value | T | input. |
 
 <b>Returns:</b>
 
-value is never
+value is T
+
+true if the input is empty, false otherwise.
+
+## Example
+
+
+```ts
+ isEmpty([])     // true
+ isEmpty({})     // true
+ isEmpty("")     // true
+ isEmpty(null)   // true
+ isEmpty(true)   // true
+ isEmpty(1)      // true
+ isEmpty({id:1}) // false
+ isEmpty([1])    // false
+ isEmpty("1")    // false
+```
 

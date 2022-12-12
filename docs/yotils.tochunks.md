@@ -4,6 +4,9 @@
 
 ## toChunks() function
 
+> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> 
+
 Split a string into N chunks of equal size. The last chunk may be smaller.
 
 <b>Signature:</b>
@@ -29,6 +32,11 @@ Array of chunks or an empty array.
 
 
 ```ts
- const chunks: string[] = toChunks("Lorem ipsum dolor sit amet, consectetur adipis", 4);
+ toChunks("Lorem ipsum dolor sit amet, consectetur adipis", 4);
+// ['Lorem ipsum ', 'dolor sit am', 'et, consecte', 'tur adipis' ]
+ toChunks("Lorem ipsum", 4);
+// [ 'Lor', 'em ', 'ips', 'um' ]
+toChunks("Lor", 4);
+// [ 'L', 'o', 'r' ]
 ```
 

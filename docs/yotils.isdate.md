@@ -4,19 +4,31 @@
 
 ## isDate() function
 
+Determines whether the input is a Date type or not.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function isDate(value: any): value is Date;
+export declare function isDate(value: unknown): value is Date;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | any |  |
+|  value | unknown | input. |
 
 <b>Returns:</b>
 
 value is Date
+
+true if the input is a Date type, false otherwise.
+
+## Example
+
+
+```ts
+isDate(new Date(2000, 1, 1)) // true
+isDate('29 Feb 2020') // false
+```
 

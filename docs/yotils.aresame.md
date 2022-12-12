@@ -4,9 +4,6 @@
 
 ## areSame() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Compares all items in the given array and returns true if they are same.
 
 <b>Signature:</b>
@@ -25,9 +22,10 @@ export declare function areSame<T extends string | number | boolean>(arr: Requir
 
 boolean
 
-- true \| false
+true \| false
 
-\#\#\#\# Usage
+## Example
+
 
 ```ts
 areSame([1, 1, 1, 1]) // true

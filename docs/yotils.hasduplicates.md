@@ -4,9 +4,6 @@
 
 ## hasDuplicates() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
-> 
-
 Determines whether an array has duplicates.
 
 <b>Signature:</b>
@@ -19,11 +16,20 @@ export declare function hasDuplicates<T extends keyof Primitive>(array: T[]): bo
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  array | T\[\] | string \| number \| boolean |
+|  array | T\[\] | input |
 
 <b>Returns:</b>
 
 boolean
 
-boolean
+true if array has duplicates, false otherwise.
+
+## Example
+
+
+```ts
+hasDuplicates(["one", "one", "two"]) // true
+hasDuplicates([1, 2, 3, 3]) // true
+hasDuplicates(["one", "two", "three"]) // false
+```
 

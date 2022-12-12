@@ -4,6 +4,8 @@
 
 ## isDefined() function
 
+Determines whether the input is defined or not.
+
 <b>Signature:</b>
 
 ```typescript
@@ -14,9 +16,26 @@ export declare function isDefined<T>(value: T): value is NonNullable<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | T |  |
+|  value | T | input |
 
 <b>Returns:</b>
 
 value is NonNullable&lt;T&gt;
+
+true if the input is defined, false otherwise.
+
+## Remarks
+
+This function returns NonNullable<T> to avoid null check after the revoke.
+
+## Example
+
+
+```ts
+declare let val: string | undefined;
+if (isDefined(val)) {
+  // val is defined and safe to use.
+  val.toLocaleLowerCase()
+}
+```
 

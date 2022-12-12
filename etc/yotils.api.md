@@ -4,7 +4,7 @@
 
 ```ts
 
-// @beta
+// @public
 export function areSame<T extends string | number | boolean>(arr: Required<T[]>): boolean;
 
 // Warning: (ae-forgotten-export) The symbol "Primitive" needs to be exported by the entry point index.d.ts
@@ -12,58 +12,73 @@ export function areSame<T extends string | number | boolean>(arr: Required<T[]>)
 // @beta
 export function countItems<T extends Primitive>(array: T[]): Record<string, T>;
 
-// @beta
+// @public
+export function getLength<T>(value: T): number;
+
+// @public
 export function hasDuplicates<T extends keyof Primitive>(array: T[]): boolean;
 
-// @public (undocumented)
-export function isArray<T>(value: any): value is Array<T>;
+// @public
+export function indexBy<T extends {
+    [K in keyof T]: string | number | symbol;
+}, K extends keyof T>(array: T[], key: K): Record<T[K], T>;
 
-// @public (undocumented)
-export function isDate(value: any): value is Date;
+// @public
+export function isArray<T>(value: unknown): value is Array<T>;
 
-// @public (undocumented)
+// @public
+export function isArrayOfString(value: unknown): value is string[];
+
+// @public
+export function isDate(value: unknown): value is Date;
+
+// @public
 export function isDateValid(value: string): value is string;
 
-// @public (undocumented)
+// @public
 export function isDefined<T>(value: T): value is NonNullable<T>;
 
-// @public (undocumented)
-export function isEmpty<T extends string | object | any[]>(value: T): value is never;
+// @public
+export function isEmpty<T>(value: T): value is T;
 
-// @public (undocumented)
+// @alpha
 export function isEqual<T>(target: T, other: T): boolean;
 
 // @beta
 export function isEqualDate(target: Required<Date>, other: Required<Date>): boolean;
 
-// @public (undocumented)
-export function isMap(value: Required<any>): value is Map<any, any>;
-
-// @public (undocumented)
-export function isNumber(input: any): input is number;
-
-// @public (undocumented)
-export function isObject(value: any): value is object;
-
-// @public (undocumented)
-export function isSet(value: Required<any>): value is Set<any>;
-
-// @public (undocumented)
-export function isString(input: any): input is string;
-
-// @public (undocumented)
-export function removeEmptyKeys(input: Record<any, any>): Record<any, any>;
+// @public
+export function isMap<T>(value: T): value is T;
 
 // @public
+export function isNull(value: unknown): value is null;
+
+// @public
+export function isNumber(value: unknown): value is number;
+
+// @public
+export function isObject<T>(value: T): value is T & object;
+
+// @public
+export function isObjectLike<T>(value: T): value is T & object;
+
+// @public
+export function isSet<T>(value: T): value is T;
+
+// @public
+export function isString(value: unknown): value is string;
+
+// Warning: (ae-forgotten-export) The symbol "AnyObject" needs to be exported by the entry point index.d.ts
+// Warning: (ae-forgotten-export) The symbol "PredicateFunction" needs to be exported by the entry point index.d.ts
+//
+// @alpha
+export function omitBy(object: AnyObject, fun: PredicateFunction): AnyObject;
+
+// @beta
 export function toChunks(input: string, chunkSize: number): string[];
 
 // @public
-export function toRecord<T extends {
-    [K in keyof T]: any;
-}, K extends keyof T>(array: Array<T>, key: K): Record<K, T>;
-
-// @public (undocumented)
-export function wrapInArray<Type>(input: Type): Type[];
+export function wrapInArray<Type>(value: Type): Type[];
 
 // (No @packageDocumentation comment for this package)
 

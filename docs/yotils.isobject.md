@@ -4,19 +4,41 @@
 
 ## isObject() function
 
+Determines whether the input is an object or not.
+
 <b>Signature:</b>
 
 ```typescript
-export declare function isObject(value: any): value is object;
+export declare function isObject<T>(value: T): value is T & object;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | any |  |
+|  value | T | input. |
 
 <b>Returns:</b>
 
-value is object
+value is T &amp; object
+
+true if the input is an object, false otherwise.
+
+## Remarks
+
+In JavaScript every thing is an object except primitive types: string - number - bigint - boolean - undefined - symbol - null MDN: https://developer.mozilla.org/en-US/docs/Glossary/Primitive
+
+In JavaScript, null is marked as one of the primitive values, because its behavior is seemingly primitive. However, when using the typeof operator, it returns "object". MDN: https://developer.mozilla.org/en-US/docs/Glossary/Null
+
+## Example
+
+
+```ts
+isObject({}) // true
+isObject(Function) // true
+isObject([]) // true
+isObject(null) // false
+isObject(1) // false
+isObject(true) // false
+```
 
