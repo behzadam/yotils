@@ -15,7 +15,7 @@
     "generate": "yarn api-extractor run --local",
     "docs": "yarn api-documenter markdown -i temp -o docs",
     "clean": "rimraf dist lib",
-    "compile": "tsc -p tsconfig.build.json",
+    "compile": "tsc -p",
     "build": "yarn run clean && yarn run compile && yarn run generate && yarn run docs"
   },
   "repository": {
