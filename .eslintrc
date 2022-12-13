@@ -12,9 +12,6 @@
     "plugin:jest/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
   "rules": {
     "tsdoc/syntax": "warn",
     "import/no-unresolved": "error"
