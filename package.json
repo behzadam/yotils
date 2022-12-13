@@ -3,6 +3,8 @@
   "version": "1.0.1",
   "description": "Typescript utils",
   "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "browser": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
   "files": [
     "src",
