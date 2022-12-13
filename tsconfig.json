@@ -1,7 +1,27 @@
 {
-  "extends": "./tsconfig.build.json",
+  "extends": "@tsconfig/node12/tsconfig.json",
   "compilerOptions": {
-    "types": ["node", "jest"]
+    "resolveJsonModule": true,
+    "preserveConstEnums": true,
+    "noUncheckedIndexedAccess": true,
+    "downlevelIteration": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "module": "commonjs",
+    "target": "ES5",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.ts", "__tests__/**/*.ts"]
+  "exclude": ["lib", "dist", "./node_modules"],
+  "include": ["./src/**/*.ts"]
 }
