@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Typescript utils",
   "main": "./dist/index.js",
-  "typings": "./lib/index.d.ts",
+  "types": "./dist/index.d.ts",
   "files": [
     "src",
     "lib",
