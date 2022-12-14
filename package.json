@@ -7,8 +7,6 @@
   "browser": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "src",
-    "lib",
     "dist"
   ],
   "scripts": {
