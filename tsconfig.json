@@ -14,7 +14,7 @@
     "declarationMap": true,
     "declarationDir": "lib",
     "module": "esnext",
-    "target": "ES5",
+    "target": "ES6",
     "sourceMap": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
