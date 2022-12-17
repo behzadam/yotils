@@ -16,7 +16,8 @@
     "docs": "yarn api-documenter markdown -i temp -o docs",
     "clean": "rimraf dist lib",
     "compile": "tsc",
-    "build": "yarn run clean && yarn run generate && yarn run docs && rollup -c"
+    "prebuild": "yarn run generate && yarn run docs",
+    "build": "yarn run clean && rollup --config rollup.config.ts --configPlugin typescript"
   },
   "repository": {
     "type": "git",
