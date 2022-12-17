@@ -13,7 +13,7 @@
     "declaration": true,
     "declarationMap": true,
     "declarationDir": "lib",
-    "module": "commonjs",
+    "module": "esnext",
     "target": "ES5",
     "sourceMap": true,
     "esModuleInterop": true,
