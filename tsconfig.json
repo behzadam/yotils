@@ -27,6 +27,6 @@
     "target": "es2022",
     "baseUrl": "."
   },
-  "exclude": ["lib", "dist", "./node_modules"],
+  "exclude": ["types", "dist", "./node_modules"],
   "include": ["src"]
 }
