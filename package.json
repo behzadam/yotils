@@ -12,12 +12,11 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "generate": "yarn api-extractor run --local",
-    "docs": "yarn api-documenter markdown -i temp -o docs",
-    "clean": "rimraf dist lib",
-    "compile": "tsc",
-    "prebuild": "yarn run generate && yarn run docs",
-    "build": "yarn run clean && rollup --config rollup.config.ts --configPlugin typescript",
+    "build:bundle": "rollup --config rollup.config.ts --configPlugin swc3",
+    "build:types": "tsc --emitDeclarationOnly --outDir types",
+    "build:types-rollup": "yarn api-extractor run && rimraf types",
+    "build:docs": "yarn api-documenter markdown -i temp -o docs",
+    "build": "rimraf dist && run-s build:bundle build:types build:docs build:types-rollup",
     "release:npm": "npm publish dist"
   },
   "repository": {
