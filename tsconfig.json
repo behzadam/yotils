@@ -19,12 +19,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
 
-    "outDir": "dist",
-
-    "declaration": true,
-    "declarationDir": "lib",
-    "emitDeclarationOnly": true,
-
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
