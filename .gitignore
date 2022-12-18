@@ -35,5 +35,5 @@ dist
 .DS_Store
 
 lib
-
 temp
+types
