@@ -27,6 +27,6 @@
     "target": "es2022",
     "baseUrl": "."
   },
-  "exclude": ["types", "dist", "./node_modules"],
+  "exclude": ["types", "dist", "src/*.test.ts", "./node_modules"],
   "include": ["src"]
 }
