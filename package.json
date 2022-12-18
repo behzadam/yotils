@@ -17,7 +17,8 @@
     "clean": "rimraf dist lib",
     "compile": "tsc",
     "prebuild": "yarn run generate && yarn run docs",
-    "build": "yarn run clean && rollup --config rollup.config.ts --configPlugin typescript"
+    "build": "yarn run clean && rollup --config rollup.config.ts --configPlugin typescript",
+    "release:npm": "npm publish dist"
   },
   "repository": {
     "type": "git",
