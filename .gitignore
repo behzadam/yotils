@@ -29,7 +29,6 @@ node_modules/
 .env
 .env.test
 
-dist
 .idea
 .parcel-cache
 .DS_Store
