@@ -19,8 +19,7 @@
     "build:types": "tsc --emitDeclarationOnly --outDir types",
     "build:types-rollup": "yarn api-extractor run && rimraf types",
     "build:docs": "yarn api-documenter markdown -i temp -o docs",
-    "build": "rimraf dist && run-s build:bundle build:types build:docs build:types-rollup",
-    "release:npm": "npm publish"
+    "build": "rimraf dist && run-s build:bundle build:types build:docs build:types-rollup"
   },
   "repository": {
     "type": "git",
