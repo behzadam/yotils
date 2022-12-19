@@ -1,9 +1,11 @@
 import type { OutputOptions, RollupOptions } from "rollup";
 import { defineRollupSwcOption, swc } from "rollup-plugin-swc3";
 import terser from "@rollup/plugin-terser";
-import { readFileSync } from "fs";
+import { readFileSync } from "node:fs";
 
-const pkg = JSON.parse(readFileSync("./package.json") as unknown as string);
+const pkg = JSON.parse(
+  readFileSync(new URL("./package.json", import.meta.url)).toString()
+);
 
 const outputs: OutputOptions[] = [
   { file: pkg.main, format: "cjs", exports: "auto" },
