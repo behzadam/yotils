@@ -1,13 +1,16 @@
 {
   "name": "yotils",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Typescript utils",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
   "browser": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
   ],
   "scripts": {
     "test": "jest",
@@ -17,7 +20,7 @@
     "build:types-rollup": "yarn api-extractor run && rimraf types",
     "build:docs": "yarn api-documenter markdown -i temp -o docs",
     "build": "rimraf dist && run-s build:bundle build:types build:docs build:types-rollup",
-    "release:npm": "npm publish dist"
+    "release:npm": "npm publish"
   },
   "repository": {
     "type": "git",
