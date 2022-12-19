@@ -1,6 +1,5 @@
 import type { OutputOptions, RollupOptions } from "rollup";
 import { defineRollupSwcOption, swc } from "rollup-plugin-swc3";
-import terser from "@rollup/plugin-terser";
 import { readFileSync } from "node:fs";
 
 const pkg = JSON.parse(
@@ -23,7 +22,6 @@ const config: RollupOptions = {
         sourceMaps: true,
       })
     ),
-    terser(),
   ],
 };
 
