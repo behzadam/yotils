@@ -1,4 +1,4 @@
-import { getLength } from "./get-length";
+import { getLength } from './get-length';
 
 /**
  * Determines whether an input is empty or not.

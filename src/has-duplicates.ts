@@ -1,4 +1,4 @@
-import { Primitive } from "./types";
+import { Primitive } from './types';
 
 /**
  * Determines whether an array has duplicates.

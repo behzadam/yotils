@@ -1,1 +1,1 @@
-export { getTag } from "./_get-tag";
+export { getTag } from './_get-tag';

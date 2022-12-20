@@ -1,6 +1,6 @@
-import { isDate } from "./is-date";
-import { isEqualDate } from "./is-equal-date";
-import { isObjectLike } from "./is-object-like";
+import { isDate } from './is-date';
+import { isEqualDate } from './is-equal-date';
+import { isObjectLike } from './is-object-like';
 
 /**
  * Determines whether two inputs are equal or not.

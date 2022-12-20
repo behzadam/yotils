@@ -1,6 +1,6 @@
-import { isArray } from "./is-array";
-import { isObject } from "./is-object";
-import { isString } from "./is-string";
+import { isArray } from './is-array';
+import { isObject } from './is-object';
+import { isString } from './is-string';
 
 /**
  * Gets length of string | array | object

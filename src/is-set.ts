@@ -1,5 +1,5 @@
-import { getTag } from "./internal";
-import { isObjectLike } from "./is-object-like";
+import { getTag } from './internal';
+import { isObjectLike } from './is-object-like';
 
 /**
  * Determines whether the input is `Set` or not.
@@ -13,5 +13,5 @@ import { isObjectLike } from "./is-object-like";
  * @public
  */
 export function isSet<T>(value: T): value is T {
-  return isObjectLike(value) && getTag(value) === "[object Set]";
+  return isObjectLike(value) && getTag(value) === '[object Set]';
 }

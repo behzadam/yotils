@@ -1,4 +1,4 @@
-import { PredicateFunction, AnyObject } from "./types";
+import { PredicateFunction, AnyObject } from './types';
 
 /**
  * Omits by

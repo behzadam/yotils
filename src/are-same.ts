@@ -12,7 +12,7 @@
  * @public
  */
 export function areSame<T extends string | number | boolean>(
-  arr: Required<T[]>
+  arr: Required<T[]>,
 ): boolean {
   return arr.every((item) => item === arr[0]);
 }

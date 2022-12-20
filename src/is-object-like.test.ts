@@ -1,6 +1,6 @@
-import { isObjectLike } from "./";
+import { isObjectLike } from './';
 
-describe("isObjectLike cases", () => {
+describe('isObjectLike cases', () => {
   test.each`
     input        | expected
     ${{}}        | ${true}
@@ -10,7 +10,7 @@ describe("isObjectLike cases", () => {
     ${null}      | ${false}
     ${1}         | ${false}
     ${true}      | ${false}
-  `("should return $expected when input is: $input", ({ input, expected }) => {
+  `('should return $expected when input is: $input', ({ input, expected }) => {
     expect(isObjectLike(input)).toBe(expected);
   });
 });

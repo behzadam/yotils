@@ -1,14 +1,14 @@
-import { isArray } from "./";
+import { isArray } from './';
 
-describe("isArray cases", () => {
+describe('isArray cases', () => {
   test.each`
     input                     | expected
     ${[1, 1, 1]}              | ${true}
-    ${["one", "one"]}         | ${true}
+    ${['one', 'one']}         | ${true}
     ${[{ id: 1 }, { id: 2 }]} | ${true}
-    ${"string"}               | ${false}
+    ${'string'}               | ${false}
     ${null}                   | ${false}
-  `("should return $expected when input is: $input", ({ input, expected }) => {
+  `('should return $expected when input is: $input', ({ input, expected }) => {
     expect(isArray(input)).toBe(expected);
   });
 });

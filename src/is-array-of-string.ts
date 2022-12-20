@@ -1,4 +1,4 @@
-import { isString } from "./is-string";
+import { isString } from './is-string';
 
 /**
  * Determines whether the input is array of string or not.

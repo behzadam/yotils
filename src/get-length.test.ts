@@ -1,6 +1,6 @@
-import { getLength } from "./";
+import { getLength } from './';
 
-describe("getLength cases", () => {
+describe('getLength cases', () => {
   test.each`
     input        | expected
     ${[]}        | ${0}
@@ -9,7 +9,7 @@ describe("getLength cases", () => {
     ${{ id: 1 }} | ${1}
     ${true}      | ${0}
     ${1}         | ${0}
-  `("should return $expected when input is: $input", ({ input, expected }) => {
+  `('should return $expected when input is: $input', ({ input, expected }) => {
     expect(getLength(input)).toBe(expected);
   });
 });

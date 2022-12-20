@@ -17,6 +17,6 @@
  */
 export function toChunks(input: string, chunkSize: number): string[] {
   const chunkCount = Math.ceil(input.length / chunkSize);
-  const regexp = new RegExp(`.{1,${chunkCount}}`, "g");
+  const regexp = new RegExp(`.{1,${chunkCount}}`, 'g');
   return input.match(regexp) ?? [];
 }

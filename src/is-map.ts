@@ -1,5 +1,5 @@
-import { getTag } from "./internal";
-import { isObjectLike } from "./is-object-like";
+import { getTag } from './internal';
+import { isObjectLike } from './is-object-like';
 
 /**
  * Determines whether an input is a map or not.
@@ -14,5 +14,5 @@ import { isObjectLike } from "./is-object-like";
  * @public
  */
 export function isMap<T>(value: T): value is T {
-  return isObjectLike(value) && getTag(value) === "[object Map]";
+  return isObjectLike(value) && getTag(value) === '[object Map]';
 }
