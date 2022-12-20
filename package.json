@@ -15,6 +15,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
+    "format": "prettier --write --cache .",
     "build:bundle": "rollup --config rollup.config.ts --configPlugin swc3",
     "build:types": "tsc --emitDeclarationOnly --outDir types",
     "build:types-rollup": "yarn api-extractor run && rimraf types",
