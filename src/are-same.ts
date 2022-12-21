@@ -1,6 +1,6 @@
 /**
  * Compares all items in the given array and returns true if they are same.
- * @param arr - Given array.
+ * @param array - Given array.
  * @returns true | false
  * @example
  *
@@ -12,7 +12,7 @@
  * @public
  */
 export function areSame<T extends string | number | boolean>(
-  arr: Required<T[]>,
+  array: Required<T[]>,
 ): boolean {
-  return arr.every((item) => item === arr[0]);
+  return array.every((item) => item === array[0]);
 }
