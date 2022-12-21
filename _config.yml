@@ -5,6 +5,8 @@ theme: just-the-docs
 url: https://behzadam.github.io/yotils
 
 baseurl: "/docs"
+source              : .
+destination         : ./docs
 
 plugins:
   - jekyll-default-layout
