@@ -1,1 +1,5 @@
-remote_theme: just-the-docs
+title: Yotils
+description: Yotils is a utility library for TypeScript
+theme: just-the-docs
+
+url: https://behzadam.github.io/yotils/yotils.html
