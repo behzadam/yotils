@@ -6,8 +6,5 @@ url: https://behzadam.github.io/yotils
 
 baseurl: "/docs"
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
-
 plugins:
   - jekyll-default-layout
