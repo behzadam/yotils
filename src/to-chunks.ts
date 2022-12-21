@@ -1,7 +1,7 @@
 /**
  * Split a string into N chunks of equal size.
  * The last chunk may be smaller.
- * @param input - string
+ * @param value - string
  * @param chunkSize - number
  * @returns Array of chunks or an empty array.
  * @example
@@ -15,8 +15,8 @@
  * ```
  * @beta
  */
-export function toChunks(input: string, chunkSize: number): string[] {
-  const chunkCount = Math.ceil(input.length / chunkSize);
+export function toChunks(value: string, chunkSize: number): string[] {
+  const chunkCount = Math.ceil(value.length / chunkSize);
   const regexp = new RegExp(`.{1,${chunkCount}}`, 'g');
-  return input.match(regexp) ?? [];
+  return value.match(regexp) ?? [];
 }
