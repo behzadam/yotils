@@ -5,7 +5,7 @@
 ```ts
 
 // @public
-export function areSame<T extends string | number | boolean>(arr: Required<T[]>): boolean;
+export function areSame<T extends string | number | boolean>(array: Required<T[]>): boolean;
 
 // Warning: (ae-forgotten-export) The symbol "Primitive" needs to be exported by the entry point index.d.ts
 //
@@ -75,7 +75,7 @@ export function isString(value: unknown): value is string;
 export function omitBy(object: AnyObject, fun: PredicateFunction): AnyObject;
 
 // @beta
-export function toChunks(input: string, chunkSize: number): string[];
+export function toChunks(value: string, chunkSize: number): string[];
 
 // @public
 export function wrapInArray<Type>(value: Type): Type[];
