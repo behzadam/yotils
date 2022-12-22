@@ -2,7 +2,7 @@ declare type AnyObject = Record<keyof any, unknown>;
 
 /**
  * Compares all items in the given array and returns true if they are same.
- * @param arr - Given array.
+ * @param array - Given array.
  * @returns true | false
  * @example
  *
@@ -13,7 +13,7 @@ declare type AnyObject = Record<keyof any, unknown>;
  * ```
  * @public
  */
-export declare function areSame<T extends string | number | boolean>(arr: Required<T[]>): boolean;
+export declare function areSame<T extends string | number | boolean>(array: Required<T[]>): boolean;
 
 /* Excluded from this release type: countItems */
 

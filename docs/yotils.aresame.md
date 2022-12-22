@@ -9,14 +9,14 @@ Compares all items in the given array and returns true if they are same.
 <b>Signature:</b>
 
 ```typescript
-export declare function areSame<T extends string | number | boolean>(arr: Required<T[]>): boolean;
+export declare function areSame<T extends string | number | boolean>(array: Required<T[]>): boolean;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  arr | Required&lt;T\[\]&gt; | Given array. |
+|  array | Required&lt;T\[\]&gt; | Given array. |
 
 <b>Returns:</b>
 

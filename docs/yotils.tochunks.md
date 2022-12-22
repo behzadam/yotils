@@ -12,14 +12,14 @@ Split a string into N chunks of equal size. The last chunk may be smaller.
 <b>Signature:</b>
 
 ```typescript
-export declare function toChunks(input: string, chunkSize: number): string[];
+export declare function toChunks(value: string, chunkSize: number): string[];
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  input | string | string |
+|  value | string | string |
 |  chunkSize | number | number |
 
 <b>Returns:</b>

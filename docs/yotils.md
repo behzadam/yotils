@@ -8,7 +8,7 @@
 
 |  Function | Description |
 |  --- | --- |
-|  [areSame(arr)](./yotils.aresame.md) | Compares all items in the given array and returns true if they are same. |
+|  [areSame(array)](./yotils.aresame.md) | Compares all items in the given array and returns true if they are same. |
 |  [countItems(array)](./yotils.countitems.md) | <b><i>(BETA)</i></b> Counts of repeated items in flattened arrays. |
 |  [getLength(value)](./yotils.getlength.md) | Gets length of string \| array \| object |
 |  [hasDuplicates(array)](./yotils.hasduplicates.md) | Determines whether an array has duplicates. |
@@ -27,6 +27,6 @@
 |  [isObjectLike(value)](./yotils.isobjectlike.md) | Determines whether the input is an object like or not. When a value is object like, it is not null and <code>typeof</code> result is "object". |
 |  [isSet(value)](./yotils.isset.md) | Determines whether the input is <code>Set</code> or not. |
 |  [isString(value)](./yotils.isstring.md) | Determines whether the input is string or not. |
-|  [toChunks(input, chunkSize)](./yotils.tochunks.md) | <b><i>(BETA)</i></b> Split a string into N chunks of equal size. The last chunk may be smaller. |
+|  [toChunks(value, chunkSize)](./yotils.tochunks.md) | <b><i>(BETA)</i></b> Split a string into N chunks of equal size. The last chunk may be smaller. |
 |  [wrapInArray(value)](./yotils.wrapinarray.md) | Wraps the input in an array even if the input is an array. |
 

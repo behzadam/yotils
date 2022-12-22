@@ -2,7 +2,7 @@ declare type AnyObject = Record<keyof any, unknown>;
 
 /**
  * Compares all items in the given array and returns true if they are same.
- * @param arr - Given array.
+ * @param array - Given array.
  * @returns true | false
  * @example
  *
@@ -13,7 +13,7 @@ declare type AnyObject = Record<keyof any, unknown>;
  * ```
  * @public
  */
-export declare function areSame<T extends string | number | boolean>(arr: Required<T[]>): boolean;
+export declare function areSame<T extends string | number | boolean>(array: Required<T[]>): boolean;
 
 /**
  * Counts of repeated items in flattened arrays.
@@ -334,7 +334,7 @@ declare type Primitive = string | number | boolean;
 /**
  * Split a string into N chunks of equal size.
  * The last chunk may be smaller.
- * @param input - string
+ * @param value - string
  * @param chunkSize - number
  * @returns Array of chunks or an empty array.
  * @example
@@ -348,7 +348,7 @@ declare type Primitive = string | number | boolean;
  * ```
  * @beta
  */
-export declare function toChunks(input: string, chunkSize: number): string[];
+export declare function toChunks(value: string, chunkSize: number): string[];
 
 /**
  * Wraps the input in an array even if the input is an array.
