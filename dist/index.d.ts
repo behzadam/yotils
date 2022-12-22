@@ -141,9 +141,6 @@ export declare function isDateValid(value: string): value is string;
  * Determines whether the input is defined or not.
  * @param value - input
  * @returns true if the input is defined, false otherwise.
- * @remarks
- * This function returns NonNullable<T> to avoid null check after the revoke.
- *
  * @example
  * ```ts
  * declare let val: string | undefined;

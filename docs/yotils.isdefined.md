@@ -24,10 +24,6 @@ value is NonNullable&lt;T&gt;
 
 true if the input is defined, false otherwise.
 
-## Remarks
-
-This function returns NonNullable<T> to avoid null check after the revoke.
-
 ## Example
 
 
