@@ -1,16 +1,15 @@
 // @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
 
-import lightCodeTheme from 'prism-react-renderer/themes/github';
-import darkCodeTheme from 'prism-react-renderer/themes/dracula';
-const organizationName = 'behzadam';
-const projectName = 'yotils';
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Yotils',
-  tagline: 'Typescript utility belt',
-  url: `https://${organizationName}.github.io`,
-  baseUrl: '/site',
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
+  url: 'https://your-docusaurus-test-site.com',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -35,10 +34,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          path: '../docs',
         },
         blog: false,
         theme: {
@@ -60,10 +56,11 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'index',
             position: 'left',
             label: 'Tutorial',
           },
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -79,7 +76,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '../docs/index',
               },
             ],
           },
@@ -104,6 +101,10 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
               },
@@ -119,4 +120,4 @@ const config = {
     }),
 };
 
-export default config;
+module.exports = config;
