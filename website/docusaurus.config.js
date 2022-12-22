@@ -10,12 +10,12 @@ const config = {
   title: 'Yotils',
   tagline: 'Typescript utility belt',
   url: 'https://behzadam.github.io/',
-  baseUrl: '/',
+  baseUrl: '/yotils/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'behzadam',
-  projectName: 'yotils', // Usually your repo name.
+  projectName: 'yotils',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
