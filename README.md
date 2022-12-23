@@ -3,6 +3,6 @@
 # Yotils.js is a utility library for TypeScript
 
 ( This repository is not production ready, and I'm working on it. )
-For docs, see: [Yotils.js Docs](https://behzadam.github.io/yotils/yotils.html)
+For docs, see: [Yotils.js Docs](https://behzadam.github.io/yotils/docs/)
 
 This repository is licensed under MIT.
