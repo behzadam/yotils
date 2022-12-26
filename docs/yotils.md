@@ -4,6 +4,8 @@
 
 ## yotils package
 
+TypeScript Utility Library.
+
 ## Functions
 
 |  Function | Description |

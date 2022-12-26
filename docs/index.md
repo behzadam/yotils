@@ -8,5 +8,5 @@
 
 |  Package | Description |
 |  --- | --- |
-|  [yotils](./yotils.md) |  |
+|  [yotils](./yotils.md) | TypeScript Utility Library. |
 
