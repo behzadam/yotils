@@ -1,3 +1,9 @@
+/**
+ * TypeScript Utility Library.
+ *
+ * @packageDocumentation
+ */
+
 declare type AnyObject = Record<keyof any, unknown>;
 
 /**

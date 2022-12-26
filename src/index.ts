@@ -1,3 +1,10 @@
+// Copyright (c) Behzad Ali Mohammad Zad. All rights reserved. Licensed under the MIT license.
+
+/**
+ * TypeScript Utility Library.
+ *
+ * @packageDocumentation
+ */
 export { areSame } from './are-same';
 export { countItems } from './count-items';
 export { hasDuplicates } from './has-duplicates';
