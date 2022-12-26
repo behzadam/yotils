@@ -11,8 +11,8 @@ const config = {
   tagline: 'Typescript utility belt',
   url: 'https://behzadam.github.io/',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'behzadam',
   projectName: 'yotils', // Usually your repo name.
