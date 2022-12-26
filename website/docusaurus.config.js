@@ -29,6 +29,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           path: '../docs',
+          exclude: ['index.md', 'yotils.md'],
         },
         blog: false,
         theme: {
