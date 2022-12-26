@@ -11,11 +11,12 @@ const config = {
   tagline: 'Typescript utility belt',
   url: 'https://behzadam.github.io/',
   baseUrl: '/yotils/',
+  organizationName: 'behzadam',
+  trailingSlash: false,
+  projectName: 'yotils',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.ico',
-  organizationName: 'behzadam',
-  projectName: 'yotils',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -29,7 +30,6 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           path: '../docs',
-          exclude: ['index.md', 'yotils.md'],
         },
         blog: false,
         theme: {
