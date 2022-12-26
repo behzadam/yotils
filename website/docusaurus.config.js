@@ -11,8 +11,8 @@ const config = {
   tagline: 'Typescript utility belt',
   url: 'https://behzadam.github.io/',
   baseUrl: '/yotils/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'behzadam',
   projectName: 'yotils',
@@ -29,6 +29,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           path: '../docs',
+          exclude: ['index.md', 'yotils.md'],
         },
         blog: false,
         theme: {
@@ -57,35 +58,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '../docs/index',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/behzad_pro',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} Behzad Ali Mohammad Zad`,
       },
       prism: {
