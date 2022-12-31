@@ -4,6 +4,21 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const packageName = 'yotils';
+
+function filterSidebarItems(items) {
+  const filtered = ['index', packageName];
+  const result = items.map((item) => {
+    if (!filtered.includes(item.id)) {
+      const newName = item.id.replace('yotils.', '');
+      return {
+        type: 'doc',
+        id: newName,
+      };
+    }
+  });
+  return result;
+}
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -24,12 +39,19 @@ const config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           path: '../docs',
+          async sidebarItemsGenerator({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            return filterSidebarItems(sidebarItems);
+          },
         },
         blog: false,
         theme: {
