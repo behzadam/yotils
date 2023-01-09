@@ -36,6 +36,7 @@ node_modules/
 lib
 temp
 types
+dist
 
 # Production
 build
