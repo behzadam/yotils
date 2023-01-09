@@ -5,7 +5,6 @@
  *
  * @packageDocumentation
  */
-export { areSame } from './are-same';
 export { countItems } from './count-items';
 export { hasDuplicates } from './has-duplicates';
 export { isArray } from './is-array';
