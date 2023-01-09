@@ -9,7 +9,7 @@
  * areSame(["one", "one", "one"]) // true
  * areSame([1, 2]) // false
  * ```
- * @public
+ * @alpha
  */
 export function areSame<T extends string | number | boolean>(
   array: Required<T[]>,
