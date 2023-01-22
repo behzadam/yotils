@@ -10,7 +10,6 @@ TypeScript Utility Library.
 
 |  Function | Description |
 |  --- | --- |
-|  [areSame(array)](./yotils.aresame.md) | Compares all items in the given array and returns true if they are same. |
 |  [countItems(array)](./yotils.countitems.md) | <b><i>(BETA)</i></b> Counts of repeated items in flattened arrays. |
 |  [getLength(value)](./yotils.getlength.md) | Gets length of string \| array \| object |
 |  [hasDuplicates(array)](./yotils.hasduplicates.md) | Determines whether an array has duplicates. |
