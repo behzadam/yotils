@@ -17,7 +17,7 @@
     "lint": "eslint .",
     "format": "prettier --write --cache .",
     "build:bundle": "rollup --config rollup.config.ts --configPlugin swc3",
-    "build:types": "tsc --emitDeclarationOnly --outDir temp/types",
+    "build:types": "tsc",
     "build:types-rollup": "yarn api-extractor run && rimraf temp/types",
     "build:docs": "yarn api-documenter markdown -i temp -o docs",
     "build": "rimraf dist && run-s build:bundle build:types build:docs build:types-rollup"
