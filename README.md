@@ -9,7 +9,7 @@
 
 How Api-Extractor works?
 
-![api-extractor-diagram](https://user-images.githubusercontent.com/5009172/213945291-ec1d3944-6b4f-40ad-9b26-bc2ac0701dec.png)
+![api-extractor-diagram](https://user-images.githubusercontent.com/5009172/213946076-d0461324-63ad-4b97-84db-a674025ea306.png)
 
 ## Stack
 - TypeScript
