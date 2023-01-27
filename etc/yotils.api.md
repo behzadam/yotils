@@ -4,9 +4,6 @@
 
 ```ts
 
-// @public
-export function areSame<T extends string | number | boolean>(array: Required<T[]>): boolean;
-
 // Warning: (ae-forgotten-export) The symbol "Primitive" needs to be exported by the entry point index.d.ts
 //
 // @beta
@@ -79,7 +76,5 @@ export function toChunks(value: string, chunkSize: number): string[];
 
 // @public
 export function wrapInArray<Type>(value: Type): Type[];
-
-// (No @packageDocumentation comment for this package)
 
 ```
