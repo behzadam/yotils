@@ -2,6 +2,8 @@ name: "publish npm"
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   release:
@@ -16,8 +18,8 @@ jobs:
         with:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn
-      - run: yarn build
+      - run: npm ci
+      - run: npm run build --if-present
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
