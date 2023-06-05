@@ -1,21 +1,26 @@
-# ★彡[ʏᴏᴛɪʟꜱ.ᴊꜱ]彡★
+# Yotils is TypeScript utility library
 
-# Yotils.js is a utility library for TypeScript
 
-( This repository is not production ready, and I'm working on it. )
+Utilities:
 
-- [Yotils.js Docs](https://behzadam.github.io/yotils/docs/)
-- [Board](https://github.com/users/behzadam/projects/6/views/1)
-
-How Api-Extractor works?
-
-![api-extractor-diagram](https://user-images.githubusercontent.com/5009172/213946076-d0461324-63ad-4b97-84db-a674025ea306.png)
-
-## Stack
-- TypeScript
-- Rollup.js
-- Api-extractor [link](https://api-extractor.com/)
-- Docusaurus 2 [link](https://docusaurus.io/)
-
-This repository is licensed under MIT.
-
+- [areSame](src/are-same.ts)
+- [countItems](src/count-items.ts)
+- [getLength](src/get-length.ts)
+- [hasDuplicates](src/has-duplicates.ts)
+- [isArrayOfString](src/is-array-of-string.ts)
+- [isArray](src/is-array.ts)
+- [isDateString](src/is-date-string.ts)
+- [isDate](src/is-date.ts)
+- [isDefined](src/is-defined.ts)
+- [isEmpty](src/is-empty.ts)
+- [isEmpty](src/is-empty.ts)
+- [isEqual( @alpha )](src/is-equal.ts)
+- [isMap](src/is-map.ts)
+- [isNull](src/is-null.ts)
+- [isNumber](src/is-number.ts)
+- [isObject](src/is-object.ts)
+- [isSet](src/is-set.ts)
+- [isString](src/is-string.ts)
+- [omitBy](src/omit-by.ts)
+- [toChunks](src/to-chunks.ts)
+- [wrapInArray](src/wrap-in-array.ts)
