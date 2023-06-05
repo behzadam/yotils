@@ -1,7 +1,7 @@
 {
   "name": "yotils",
   "version": "1.0.5",
-  "description": "Typescript utils",
+  "description": "Typescript utility functions.",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
   "browser": "./dist/index.umd.js",
