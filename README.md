@@ -1,5 +1,7 @@
 # Yotils is TypeScript utility library
 
+![GitHub top language](https://img.shields.io/github/languages/top/behzadam/yotils)
+![GitHub](https://img.shields.io/github/license/behzadam/yotils)
 
 Utilities:
 
