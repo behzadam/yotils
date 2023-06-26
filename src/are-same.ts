@@ -1,3 +1,5 @@
+import { Primitive } from './types';
+
 /**
  * Compares all items in the given array and returns true if they are same.
  * @param array - Given array.
@@ -11,8 +13,8 @@
  * ```
  * @alpha
  */
-export function areSame<T extends string | number | boolean>(
-  array: Required<T[]>,
+export function areSame<Item extends Primitive>(
+  array: Required<Item[]>,
 ): boolean {
   return array.every((item) => item === array[0]);
 }

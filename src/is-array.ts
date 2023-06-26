@@ -1,6 +1,6 @@
 /**
  * Determines whether the input is an array or not.
- * @param value - Generic input.
+ * @param input - Generic input.
  * @returns true if the input is an array or false otherwise.
  * @example
  * ```ts
@@ -11,6 +11,6 @@
  * ```
  * @public
  */
-export function isArray<T>(value: unknown): value is Array<T> {
-  return Array.isArray(value);
+export function isArray<Input>(input: unknown): input is Array<Input> {
+  return Array.isArray(input);
 }

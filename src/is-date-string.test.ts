@@ -1,4 +1,4 @@
-import { isDateValid } from './';
+import { isStringDate } from './';
 
 describe('isDateValid valid cases', () => {
   test.each`
@@ -17,6 +17,6 @@ describe('isDateValid valid cases', () => {
     ${'01/Mar/2020'} | ${true}
     ${'1.1.1'}       | ${false}
   `('should return $expected when input is: $input', ({ input, expected }) => {
-    expect(isDateValid(input)).toBe(expected);
+    expect(isStringDate(input)).toBe(expected);
   });
 });

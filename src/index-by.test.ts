@@ -1,4 +1,4 @@
-import { indexBy } from '.';
+import { indexBy } from './index-by';
 
 describe('indexBy cases', () => {
   const withUniqueKey = [

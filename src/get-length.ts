@@ -4,18 +4,18 @@ import { isString } from './is-string';
 
 /**
  * Gets length of string | array | object
- * @param value - string | array | object
+ * @param input - string | array | object
  * @returns length of the input or 0
  *
  * @public
  */
-export function getLength<T>(value: T): number {
-  if (isString(value) || isArray(value)) {
-    return value.length;
+export function getLength<Input>(input: Input): number {
+  if (isString(input) || isArray(input)) {
+    return input.length;
   }
 
-  if (isObject(value)) {
-    return Object.keys(value).length;
+  if (isObject(input)) {
+    return Object.keys(input).length;
   }
   // For primitive types:
   return 0;

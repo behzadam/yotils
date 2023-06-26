@@ -1,4 +1,4 @@
-import { isArrayOfString } from './';
+import { isArrayOfString } from './is-array-of-string';
 
 describe('isArrayOfString cases', () => {
   test.each`
