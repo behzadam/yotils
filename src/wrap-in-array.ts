@@ -1,6 +1,6 @@
 /**
  * Wraps the input in an array even if the input is an array.
- * @param value - input
+ * @param input - input
  * @returns wrapped input in an array.
  * @example
  * ```ts
@@ -10,6 +10,6 @@
  * ```
  * @public
  */
-export function wrapInArray<Type>(value: Type): Type[] {
-  return [value];
+export function wrapInArray<Input>(input: Input): Input[] {
+  return [input];
 }

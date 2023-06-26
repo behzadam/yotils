@@ -1,6 +1,6 @@
 /**
  * Determines whether the input is string or not.
- * @param value - input
+ * @param input - input
  * @returns true if the input is string, false otherwise.
  * @example
  * ```ts
@@ -11,6 +11,6 @@
  * ```
  * @public
  */
-export function isString(value: unknown): value is string {
-  return typeof value === 'string';
+export function isString(input: unknown): input is string {
+  return typeof input === 'string';
 }

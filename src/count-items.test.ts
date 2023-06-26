@@ -1,4 +1,4 @@
-import { countItems } from './';
+import { countItems } from './count-items';
 
 describe('countItems cases', () => {
   test.each`

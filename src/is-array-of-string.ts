@@ -2,7 +2,7 @@ import { isString } from './is-string';
 
 /**
  * Determines whether the input is array of string or not.
- * @param value - input
+ * @param input - input
  * @returns true if the input is array, false otherwise.
  * @example
  * ```ts
@@ -11,6 +11,6 @@ import { isString } from './is-string';
  * ```
  * @public
  */
-export function isArrayOfString(value: unknown): value is string[] {
-  return Array.isArray(value) && value.every((item) => isString(item));
+export function isArrayOfString(input: unknown): input is string[] {
+  return Array.isArray(input) && input.every((item) => isString(item));
 }

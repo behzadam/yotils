@@ -1,4 +1,4 @@
-import { hasDuplicates } from './';
+import { hasDuplicates } from './has-duplicates';
 
 describe('hasDuplicates cases', () => {
   test.each`
