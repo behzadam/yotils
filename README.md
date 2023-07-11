@@ -65,7 +65,7 @@ URL:
 
 ## License
 
-The "TypeScript Algorithms, Data Structures and Patterns" repository is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the code as per the terms of the license.
+The "Yotils" repository is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the code as per the terms of the license.
 
 ## Contact
 
