@@ -9,18 +9,18 @@ Determines whether the input string is valid date or not.
 <b>Signature:</b>
 
 ```typescript
-export declare function isDateString(value: string): value is string;
+export declare function isStringDate(input: string): input is string;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | string | input string. |
+|  input | string | input string. |
 
 <b>Returns:</b>
 
-value is string
+input is string
 
 true if the input string is valid date, false otherwise.
 
@@ -32,7 +32,7 @@ While there are some regular expressions that allow date validations, it is bett
 
 
 ```ts
-isDateString('01/01/2000') // true
-isDateString('31/09/2000') // false
+isStringDate('01/01/2000') // true
+isStringDate('31/09/2000') // false
 ```
 

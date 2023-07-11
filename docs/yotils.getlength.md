@@ -9,14 +9,14 @@ Gets length of string \| array \| object
 <b>Signature:</b>
 
 ```typescript
-export declare function getLength<T>(value: T): number;
+export declare function getLength<Input>(input: Input): number;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | T | string \| array \| object |
+|  input | Input | string \| array \| object |
 
 <b>Returns:</b>
 

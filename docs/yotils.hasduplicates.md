@@ -9,14 +9,14 @@ Determines whether an array has duplicates.
 <b>Signature:</b>
 
 ```typescript
-export declare function hasDuplicates<T extends keyof Primitive>(array: T[]): boolean;
+export declare function hasDuplicates<Item extends keyof Primitive>(array: Item[]): boolean;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  array | T\[\] | input |
+|  array | Item\[\] | input |
 
 <b>Returns:</b>
 

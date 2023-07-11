@@ -9,18 +9,18 @@ Determines whether the input is array of string or not.
 <b>Signature:</b>
 
 ```typescript
-export declare function isArrayOfString(value: unknown): value is string[];
+export declare function isArrayOfString(input: unknown): input is string[];
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | unknown | input |
+|  input | unknown | input |
 
 <b>Returns:</b>
 
-value is string\[\]
+input is string\[\]
 
 true if the input is array, false otherwise.
 

@@ -9,21 +9,21 @@ Returns the spilted lists grouped by index. They key should be unique and for un
 <b>Signature:</b>
 
 ```typescript
-export declare function indexBy<T extends {
-    [K in keyof T]: string | number | symbol;
-}, K extends keyof T>(array: T[], key: K): Record<T[K], T>;
+export declare function indexBy<Item extends {
+    [Key in keyof Item]: string | number | symbol;
+}, Key extends keyof Item>(array: Item[], key: Key): Record<Item[Key], Item>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  array | T\[\] | of objects. |
-|  key | K | unique key |
+|  array | Item\[\] | of objects. |
+|  key | Key | unique key |
 
 <b>Returns:</b>
 
-Record&lt;T\[K\], T&gt;
+Record&lt;Item\[Key\], Item&gt;
 
 grouped by index, key value list.
 
