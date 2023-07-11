@@ -9,18 +9,18 @@ Determines whether the input is string or not.
 <b>Signature:</b>
 
 ```typescript
-export declare function isString(value: unknown): value is string;
+export declare function isString(input: unknown): input is string;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | unknown | input |
+|  input | unknown | input |
 
 <b>Returns:</b>
 
-value is string
+input is string
 
 true if the input is string, false otherwise.
 

@@ -9,18 +9,18 @@ Determines whether the input is an array or not.
 <b>Signature:</b>
 
 ```typescript
-export declare function isArray<T>(value: unknown): value is Array<T>;
+export declare function isArray<Input>(input: unknown): input is Array<Input>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | unknown | Generic input. |
+|  input | unknown | Generic input. |
 
 <b>Returns:</b>
 
-value is Array&lt;T&gt;
+input is Array&lt;Input&gt;
 
 true if the input is an array or false otherwise.
 

@@ -12,18 +12,18 @@ Counts of repeated items in flattened arrays.
 <b>Signature:</b>
 
 ```typescript
-export declare function countItems<T extends Primitive>(array: T[]): Record<string, T>;
+export declare function countItems<Item extends Primitive>(array: Item[]): Record<string, Item>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  array | T\[\] | array of items. |
+|  array | Item\[\] | array of items. |
 
 <b>Returns:</b>
 
-Record&lt;string, T&gt;
+Record&lt;string, Item&gt;
 
 - key value list
 

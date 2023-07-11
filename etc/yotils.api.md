@@ -7,30 +7,30 @@
 // Warning: (ae-forgotten-export) The symbol "Primitive" needs to be exported by the entry point index.d.ts
 //
 // @beta
-export function countItems<T extends Primitive>(array: T[]): Record<string, T>;
+export function countItems<Item extends Primitive>(array: Item[]): Record<string, Item>;
 
 // @public
-export function getLength<T>(value: T): number;
+export function getLength<Input>(input: Input): number;
 
 // @public
-export function hasDuplicates<T extends keyof Primitive>(array: T[]): boolean;
+export function hasDuplicates<Item extends keyof Primitive>(array: Item[]): boolean;
 
 // @public
-export function indexBy<T extends {
-    [K in keyof T]: string | number | symbol;
-}, K extends keyof T>(array: T[], key: K): Record<T[K], T>;
+export function indexBy<Item extends {
+    [Key in keyof Item]: string | number | symbol;
+}, Key extends keyof Item>(array: Item[], key: Key): Record<Item[Key], Item>;
 
 // @public
-export function isArray<T>(value: unknown): value is Array<T>;
+export function isArray<Input>(input: unknown): input is Array<Input>;
 
 // @public
-export function isArrayOfString(value: unknown): value is string[];
+export function isArrayOfString(input: unknown): input is string[];
 
 // @public
 export function isDate(value: unknown): value is Date;
 
 // @public
-export function isDateValid(value: string): value is string;
+export function isDateValid(input: string): input is string;
 
 // @public
 export function isDefined<T>(value: T): value is NonNullable<T>;
@@ -63,7 +63,7 @@ export function isObjectLike<T>(value: T): value is T & object;
 export function isSet<T>(value: T): value is T;
 
 // @public
-export function isString(value: unknown): value is string;
+export function isString(input: unknown): input is string;
 
 // Warning: (ae-forgotten-export) The symbol "AnyObject" needs to be exported by the entry point index.d.ts
 // Warning: (ae-forgotten-export) The symbol "PredicateFunction" needs to be exported by the entry point index.d.ts
@@ -72,9 +72,9 @@ export function isString(value: unknown): value is string;
 export function omitBy(object: AnyObject, fun: PredicateFunction): AnyObject;
 
 // @beta
-export function toChunks(value: string, chunkSize: number): string[];
+export function toChunks(input: string, chunkSize: number): string[];
 
 // @public
-export function wrapInArray<Type>(value: Type): Type[];
+export function wrapInArray<Input>(input: Input): Input[];
 
 ```

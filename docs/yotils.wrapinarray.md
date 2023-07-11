@@ -9,18 +9,18 @@ Wraps the input in an array even if the input is an array.
 <b>Signature:</b>
 
 ```typescript
-export declare function wrapInArray<Type>(value: Type): Type[];
+export declare function wrapInArray<Input>(input: Input): Input[];
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  value | Type | input |
+|  input | Input | input |
 
 <b>Returns:</b>
 
-Type\[\]
+Input\[\]
 
 wrapped input in an array.
 

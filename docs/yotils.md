@@ -11,13 +11,13 @@ TypeScript Utility Library.
 |  Function | Description |
 |  --- | --- |
 |  [countItems(array)](./yotils.countitems.md) | <b><i>(BETA)</i></b> Counts of repeated items in flattened arrays. |
-|  [getLength(value)](./yotils.getlength.md) | Gets length of string \| array \| object |
+|  [getLength(input)](./yotils.getlength.md) | Gets length of string \| array \| object |
 |  [hasDuplicates(array)](./yotils.hasduplicates.md) | Determines whether an array has duplicates. |
 |  [indexBy(array, key)](./yotils.indexby.md) | Returns the spilted lists grouped by index. They key should be unique and for ununique keys it would be replaced with the last key. |
-|  [isArray(value)](./yotils.isarray.md) | Determines whether the input is an array or not. |
-|  [isArrayOfString(value)](./yotils.isarrayofstring.md) | Determines whether the input is array of string or not. |
+|  [isArray(input)](./yotils.isarray.md) | Determines whether the input is an array or not. |
+|  [isArrayOfString(input)](./yotils.isarrayofstring.md) | Determines whether the input is array of string or not. |
 |  [isDate(value)](./yotils.isdate.md) | Determines whether the input is a Date type or not. |
-|  [isDateValid(value)](./yotils.isdatevalid.md) | Determines whether the input string is valid date or not. |
+|  [isDateValid(input)](./yotils.isdatevalid.md) | Determines whether the input string is valid date or not. |
 |  [isDefined(value)](./yotils.isdefined.md) | Determines whether the input is defined or not. |
 |  [isEmpty(value)](./yotils.isempty.md) | Determines whether an input is empty or not. |
 |  [isEqualDate(target, other)](./yotils.isequaldate.md) | <b><i>(BETA)</i></b> Compares two given date type values. |
@@ -27,7 +27,7 @@ TypeScript Utility Library.
 |  [isObject(value)](./yotils.isobject.md) | Determines whether the input is an object or not. |
 |  [isObjectLike(value)](./yotils.isobjectlike.md) | Determines whether the input is an object like or not. When a value is object like, it is not null and <code>typeof</code> result is "object". |
 |  [isSet(value)](./yotils.isset.md) | Determines whether the input is <code>Set</code> or not. |
-|  [isString(value)](./yotils.isstring.md) | Determines whether the input is string or not. |
-|  [toChunks(value, chunkSize)](./yotils.tochunks.md) | <b><i>(BETA)</i></b> Split a string into N chunks of equal size. The last chunk may be smaller. |
-|  [wrapInArray(value)](./yotils.wrapinarray.md) | Wraps the input in an array even if the input is an array. |
+|  [isString(input)](./yotils.isstring.md) | Determines whether the input is string or not. |
+|  [toChunks(input, chunkSize)](./yotils.tochunks.md) | <b><i>(BETA)</i></b> Split a string into N chunks of equal size. The last chunk may be smaller. |
+|  [wrapInArray(input)](./yotils.wrapinarray.md) | Wraps the input in an array even if the input is an array. |
 
