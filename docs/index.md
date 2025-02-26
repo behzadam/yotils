@@ -4,9 +4,3 @@
 
 ## API Reference
 
-## Packages
-
-|  Package | Description |
-|  --- | --- |
-|  [yotils](./yotils.md) | TypeScript Utility Library. |
-
