@@ -1,30 +1,41 @@
-name: 'publish npm'
+name: Release
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches:
+      - master # or main
+
+permissions:
+  contents: read
 
 jobs:
   release:
+    name: Release
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       issues: write
       pull-requests: write
-    runs-on: ubuntu-latest
+      id-token: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          node-version: '20.8.1'
-          registry-url: 'https://registry.npmjs.org'
-      - uses: pnpm/action-setup@v2
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
         with:
           version: latest
-      - run: pnpm install
-      - run: pnpm build:docs
-      - run: pnpm run semantic-release
+      - name: Install dependencies
+        run: pnpm install
+      - name: Verify signatures
+        run: pnpm audit
+      - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+        run: npx semantic-release
