@@ -12,8 +12,11 @@ import { Primitive } from './types';
 export function countItems<Item extends Primitive>(
   array: Item[],
 ): Record<string, Item> {
-  return array.reduce((acc: any, current) => {
-    acc[current] = !acc[current] ? 1 : ++acc[current];
-    return acc;
-  }, {} as Record<string, Item>);
+  return array.reduce(
+    (acc: any, current) => {
+      acc[current] = !acc[current] ? 1 : ++acc[current];
+      return acc;
+    },
+    {} as Record<string, Item>,
+  );
 }
