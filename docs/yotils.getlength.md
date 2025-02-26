@@ -6,19 +6,48 @@
 
 Gets length of string \| array \| object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function getLength<Input>(input: Input): number;
+declare function getLength<Input>(input: Input): number;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  input | Input | string \| array \| object |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+
+</td><td>
+
+Input
+
+
+</td><td>
+
+string \| array \| object
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 number
 

@@ -4,25 +4,69 @@
 
 ## isEqualDate() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Compares two given date type values.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function isEqualDate(target: Required<Date>, other: Required<Date>): boolean;
+declare function isEqualDate(target: Required<Date>, other: Required<Date>): boolean;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | Required&lt;Date&gt; | Date |
-|  other | Required&lt;Date&gt; | Date |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+Required&lt;Date&gt;
+
+
+</td><td>
+
+Date
+
+
+</td></tr>
+<tr><td>
+
+other
+
+
+</td><td>
+
+Required&lt;Date&gt;
+
+
+</td><td>
+
+Date
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 boolean
 

@@ -4,25 +4,69 @@
 
 ## toChunks() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Split a string into N chunks of equal size. The last chunk may be smaller.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function toChunks(input: string, chunkSize: number): string[];
+declare function toChunks(input: string, chunkSize: number): string[];
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  input | string | string |
-|  chunkSize | number | number |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+string
+
+
+</td></tr>
+<tr><td>
+
+chunkSize
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+number
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 string\[\]
 

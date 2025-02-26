@@ -6,19 +6,48 @@
 
 Determines whether the input is defined or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function isDefined<T>(value: T): value is NonNullable<T>;
+declare function isDefined<T>(value: T): value is NonNullable<T>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  value | T | input |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+value
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+input
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 value is NonNullable&lt;T&gt;
 

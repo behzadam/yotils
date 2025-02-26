@@ -6,19 +6,48 @@
 
 Determines whether the input string is valid date or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function isStringDate(input: string): input is string;
+declare function isStringDate(input: string): input is string;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  input | string | input string. |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+input string.
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 input is string
 

@@ -4,30 +4,259 @@
 
 ## yotils package
 
-TypeScript Utility Library.
-
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [countItems(array)](./yotils.countitems.md) | <b><i>(BETA)</i></b> Counts of repeated items in flattened arrays. |
-|  [getLength(input)](./yotils.getlength.md) | Gets length of string \| array \| object |
-|  [hasDuplicates(array)](./yotils.hasduplicates.md) | Determines whether an array has duplicates. |
-|  [indexBy(array, key)](./yotils.indexby.md) | Returns the spilted lists grouped by index. They key should be unique and for ununique keys it would be replaced with the last key. |
-|  [isArray(input)](./yotils.isarray.md) | Determines whether the input is an array or not. |
-|  [isArrayOfString(input)](./yotils.isarrayofstring.md) | Determines whether the input is array of string or not. |
-|  [isDate(value)](./yotils.isdate.md) | Determines whether the input is a Date type or not. |
-|  [isDateValid(input)](./yotils.isdatevalid.md) | Determines whether the input string is valid date or not. |
-|  [isDefined(value)](./yotils.isdefined.md) | Determines whether the input is defined or not. |
-|  [isEmpty(value)](./yotils.isempty.md) | Determines whether an input is empty or not. |
-|  [isEqualDate(target, other)](./yotils.isequaldate.md) | <b><i>(BETA)</i></b> Compares two given date type values. |
-|  [isMap(value)](./yotils.ismap.md) | Determines whether an input is a map or not. |
-|  [isNull(value)](./yotils.isnull.md) | Determines whether an input is null or not. |
-|  [isNumber(value)](./yotils.isnumber.md) | Determines whether an input is number or not. |
-|  [isObject(value)](./yotils.isobject.md) | Determines whether the input is an object or not. |
-|  [isObjectLike(value)](./yotils.isobjectlike.md) | Determines whether the input is an object like or not. When a value is object like, it is not null and <code>typeof</code> result is "object". |
-|  [isSet(value)](./yotils.isset.md) | Determines whether the input is <code>Set</code> or not. |
-|  [isString(input)](./yotils.isstring.md) | Determines whether the input is string or not. |
-|  [toChunks(input, chunkSize)](./yotils.tochunks.md) | <b><i>(BETA)</i></b> Split a string into N chunks of equal size. The last chunk may be smaller. |
-|  [wrapInArray(input)](./yotils.wrapinarray.md) | Wraps the input in an array even if the input is an array. |
+<table><thead><tr><th>
 
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[countItems(array)](./yotils.countitems.md)
+
+
+</td><td>
+
+**_(BETA)_** Counts of repeated items in flattened arrays.
+
+
+</td></tr>
+<tr><td>
+
+[getLength(input)](./yotils.getlength.md)
+
+
+</td><td>
+
+Gets length of string \| array \| object
+
+
+</td></tr>
+<tr><td>
+
+[hasDuplicates(array)](./yotils.hasduplicates.md)
+
+
+</td><td>
+
+Determines whether an array has duplicates.
+
+
+</td></tr>
+<tr><td>
+
+[indexBy(array, key)](./yotils.indexby.md)
+
+
+</td><td>
+
+Returns the spilted lists grouped by index. They key should be unique and for ununique keys it would be replaced with the last key.
+
+
+</td></tr>
+<tr><td>
+
+[isArray(input)](./yotils.isarray.md)
+
+
+</td><td>
+
+Determines whether the input is an array or not.
+
+
+</td></tr>
+<tr><td>
+
+[isArrayOfString(input)](./yotils.isarrayofstring.md)
+
+
+</td><td>
+
+Determines whether the input is array of string or not.
+
+
+</td></tr>
+<tr><td>
+
+[isDate(value)](./yotils.isdate.md)
+
+
+</td><td>
+
+Determines whether the input is a Date type or not.
+
+
+</td></tr>
+<tr><td>
+
+[isDateValid(input)](./yotils.isdatevalid.md)
+
+
+</td><td>
+
+Determines whether the input string is valid date or not.
+
+
+</td></tr>
+<tr><td>
+
+[isDefined(value)](./yotils.isdefined.md)
+
+
+</td><td>
+
+Determines whether the input is defined or not.
+
+
+</td></tr>
+<tr><td>
+
+[isEmpty(value)](./yotils.isempty.md)
+
+
+</td><td>
+
+Determines whether an input is empty or not.
+
+
+</td></tr>
+<tr><td>
+
+[isEqual(target, other)](./yotils.isequal.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Determines whether two inputs are equal or not.
+
+
+</td></tr>
+<tr><td>
+
+[isEqualDate(target, other)](./yotils.isequaldate.md)
+
+
+</td><td>
+
+**_(BETA)_** Compares two given date type values.
+
+
+</td></tr>
+<tr><td>
+
+[isMap(value)](./yotils.ismap.md)
+
+
+</td><td>
+
+Determines whether an input is a map or not.
+
+
+</td></tr>
+<tr><td>
+
+[isNull(value)](./yotils.isnull.md)
+
+
+</td><td>
+
+Determines whether an input is null or not.
+
+
+</td></tr>
+<tr><td>
+
+[isNumber(value)](./yotils.isnumber.md)
+
+
+</td><td>
+
+Determines whether an input is number or not.
+
+
+</td></tr>
+<tr><td>
+
+[isObject(value)](./yotils.isobject.md)
+
+
+</td><td>
+
+Determines whether the input is an object or not.
+
+
+</td></tr>
+<tr><td>
+
+[isObjectLike(value)](./yotils.isobjectlike.md)
+
+
+</td><td>
+
+Determines whether the input is an object like or not. When a value is object like, it is not null and `typeof` result is "object".
+
+
+</td></tr>
+<tr><td>
+
+[isSet(value)](./yotils.isset.md)
+
+
+</td><td>
+
+Determines whether the input is `Set` or not.
+
+
+</td></tr>
+<tr><td>
+
+[isString(input)](./yotils.isstring.md)
+
+
+</td><td>
+
+Determines whether the input is string or not.
+
+
+</td></tr>
+<tr><td>
+
+[omitBy(object, fun)](./yotils.omitby.md)
+
+
+</td><td>
+
+**_(ALPHA)_** Omits by
+
+
+</td></tr>
+<tr><td>
+
+[toChunks(input, chunkSize)](./yotils.tochunks.md)
+
+
+</td><td>
+
+**_(BETA)_** Split a string into N chunks of equal size. The last chunk may be smaller.
+
+
+</td></tr>
+<tr><td>
+
+[wrapInArray(input)](./yotils.wrapinarray.md)
+
+
+</td><td>
+
+Wraps the input in an array even if the input is an array.
+
+
+</td></tr>
+</tbody></table>

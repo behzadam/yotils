@@ -6,19 +6,48 @@
 
 Determines whether the input is an array or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function isArray<Input>(input: unknown): input is Array<Input>;
+declare function isArray<Input>(input: unknown): input is Array<Input>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  input | unknown | Generic input. |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+Generic input.
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 input is Array&lt;Input&gt;
 

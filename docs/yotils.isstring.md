@@ -6,19 +6,48 @@
 
 Determines whether the input is string or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function isString(input: unknown): input is string;
+declare function isString(input: unknown): input is string;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  input | unknown | input |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+input
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 input is string
 

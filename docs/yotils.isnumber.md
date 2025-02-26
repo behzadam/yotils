@@ -6,19 +6,48 @@
 
 Determines whether an input is number or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function isNumber(value: unknown): value is number;
+declare function isNumber(value: unknown): value is number;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  value | unknown | input |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+value
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+input
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 value is number
 

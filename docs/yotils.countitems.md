@@ -4,24 +4,53 @@
 
 ## countItems() function
 
-> This API is provided as a preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
+> This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 > 
 
 Counts of repeated items in flattened arrays.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function countItems<Item extends Primitive>(array: Item[]): Record<string, Item>;
+declare function countItems<Item extends Primitive>(array: Item[]): Record<string, Item>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  array | Item\[\] | array of items. |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+array
+
+
+</td><td>
+
+Item\[\]
+
+
+</td><td>
+
+array of items.
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 Record&lt;string, Item&gt;
 

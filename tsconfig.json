@@ -19,10 +19,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
 
-    "declaration": true,
-    "declarationDir": "temp/types",
-    "emitDeclarationOnly": true,
-
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

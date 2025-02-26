@@ -77,4 +77,6 @@ export function toChunks(input: string, chunkSize: number): string[];
 // @public
 export function wrapInArray<Input>(input: Input): Input[];
 
+// (No @packageDocumentation comment for this package)
+
 ```

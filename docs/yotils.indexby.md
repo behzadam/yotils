@@ -6,22 +6,66 @@
 
 Returns the spilted lists grouped by index. They key should be unique and for ununique keys it would be replaced with the last key.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function indexBy<Item extends {
+declare function indexBy<Item extends {
     [Key in keyof Item]: string | number | symbol;
 }, Key extends keyof Item>(array: Item[], key: Key): Record<Item[Key], Item>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  array | Item\[\] | of objects. |
-|  key | Key | unique key |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+array
+
+
+</td><td>
+
+Item\[\]
+
+
+</td><td>
+
+of objects.
+
+
+</td></tr>
+<tr><td>
+
+key
+
+
+</td><td>
+
+Key
+
+
+</td><td>
+
+unique key
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 Record&lt;Item\[Key\], Item&gt;
 

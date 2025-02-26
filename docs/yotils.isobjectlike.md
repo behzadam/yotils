@@ -6,19 +6,48 @@
 
 Determines whether the input is an object like or not. When a value is object like, it is not null and `typeof` result is "object".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function isObjectLike<T>(value: T): value is T & object;
+declare function isObjectLike<T>(value: T): value is T & object;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  value | T | input. |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+value
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+input.
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 value is T &amp; object
 

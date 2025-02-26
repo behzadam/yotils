@@ -6,19 +6,48 @@
 
 Determines whether the input is `Set` or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function isSet<T>(value: T): value is T;
+declare function isSet<T>(value: T): value is T;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  value | T | input. |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+value
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+input.
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 value is T
 

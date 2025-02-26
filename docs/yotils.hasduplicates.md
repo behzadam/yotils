@@ -6,19 +6,48 @@
 
 Determines whether an array has duplicates.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare function hasDuplicates<Item extends keyof Primitive>(array: Item[]): boolean;
+declare function hasDuplicates<Item extends keyof Primitive>(array: Item[]): boolean;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  array | Item\[\] | input |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+array
+
+
+</td><td>
+
+Item\[\]
+
+
+</td><td>
+
+input
+
+
+</td></tr>
+</tbody></table>
+**Returns:**
 
 boolean
 

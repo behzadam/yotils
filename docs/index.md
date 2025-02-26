@@ -6,7 +6,24 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [yotils](./yotils.md) | TypeScript Utility Library. |
+<table><thead><tr><th>
 
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[yotils](./yotils.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
