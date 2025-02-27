@@ -43,7 +43,6 @@ npm build
 - [hasDuplicates](src/has-duplicates.ts)
 - [isArrayOfString](src/is-array-of-string.ts)
 - [isArray](src/is-array.ts)
-- [isDateString](src/is-date-string.ts)
 - [isDate](src/is-date.ts)
 - [isDefined](src/is-defined.ts)
 - [isEmpty](src/is-empty.ts)

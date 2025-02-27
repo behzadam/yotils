@@ -9,8 +9,6 @@ export { countItems } from './count-items';
 export { hasDuplicates } from './has-duplicates';
 export { isArray } from './is-array';
 export { isArrayOfString } from './is-array-of-string';
-export { isDate } from './is-date';
-export { isStringDate as isDateValid } from './is-string-date';
 export { isDefined } from './is-defined';
 export { isEmpty } from './is-empty';
 export { isEqual } from './is-equal';
