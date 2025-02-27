@@ -85,28 +85,6 @@ Determines whether the input is array of string or not.
 </td></tr>
 <tr><td>
 
-[isDate(value)](./yotils.isdate.md)
-
-
-</td><td>
-
-Determines whether the input is a Date type or not.
-
-
-</td></tr>
-<tr><td>
-
-[isDateValid(input)](./yotils.isdatevalid.md)
-
-
-</td><td>
-
-Determines whether the input string is valid date or not.
-
-
-</td></tr>
-<tr><td>
-
 [isDefined(value)](./yotils.isdefined.md)
 
 

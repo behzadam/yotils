@@ -27,12 +27,6 @@ export function isArray<Input>(input: unknown): input is Array<Input>;
 export function isArrayOfString(input: unknown): input is string[];
 
 // @public
-export function isDate(value: unknown): value is Date;
-
-// @public
-export function isDateValid(input: string): input is string;
-
-// @public
 export function isDefined<T>(value: T): value is NonNullable<T>;
 
 // @public
