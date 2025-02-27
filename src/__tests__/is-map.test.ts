@@ -1,4 +1,4 @@
-import { isMap } from './';
+import { isMap } from '..';
 
 describe('isMap cases', () => {
   test.each`

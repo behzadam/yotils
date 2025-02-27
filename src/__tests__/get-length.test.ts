@@ -1,4 +1,4 @@
-import { getLength } from './get-length';
+import { getLength } from '../get-length';
 
 describe('getLength cases', () => {
   test.each`

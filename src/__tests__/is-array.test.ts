@@ -1,4 +1,4 @@
-import { isArray } from './is-array';
+import { isArray } from '../is-array';
 
 describe('isArray cases', () => {
   test.each`

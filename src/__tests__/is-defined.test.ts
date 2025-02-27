@@ -1,4 +1,4 @@
-import { isDefined } from './';
+import { isDefined } from '..';
 
 describe('isDefined cases', () => {
   test.each`

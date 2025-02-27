@@ -1,4 +1,4 @@
-import { isEqual } from './';
+import { isEqual } from '..';
 
 describe('isEqual valid cases', () => {
   test.each`

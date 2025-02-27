@@ -1,4 +1,4 @@
-import { toChunks } from './to-chunks';
+import { toChunks } from '../to-chunks';
 
 describe('toChunks cases', () => {
   test.each`

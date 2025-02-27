@@ -1,4 +1,4 @@
-import { areSame } from './are-same';
+import { areSame } from '../are-same';
 
 describe('areSame', () => {
   test.each`

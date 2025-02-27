@@ -1,4 +1,4 @@
-import { wrapInArray } from '.';
+import { wrapInArray } from '..';
 
 describe('wrapInArray cases', () => {
   test.each`
