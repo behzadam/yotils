@@ -25,3 +25,4 @@ export { toChunks } from './to-chunks';
 export { indexBy } from './index-by';
 export { wrapInArray } from './wrap-in-array';
 export { getLength } from './get-length';
+export { get } from './get';
