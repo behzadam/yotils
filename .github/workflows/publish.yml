@@ -36,6 +36,7 @@ jobs:
           version: latest
       - run: pnpm install
       - run: pnpm publish --no-git-checks
+      - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
