@@ -1,4 +1,4 @@
-import { omitBy } from '.';
+import { omitBy } from '..';
 
 describe('omitBy cases', () => {
   const input = {

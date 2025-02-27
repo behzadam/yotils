@@ -1,4 +1,4 @@
-import { isStringDate } from './';
+import { isStringDate } from '..';
 
 describe('isDateValid valid cases', () => {
   test.each`

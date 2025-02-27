@@ -1,4 +1,4 @@
-import { isNumber } from './';
+import { isNumber } from '..';
 
 describe('isNumber cases', () => {
   test.each`

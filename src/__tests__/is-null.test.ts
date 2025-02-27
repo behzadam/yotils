@@ -1,4 +1,4 @@
-import { isNull } from './';
+import { isNull } from '..';
 
 describe('isNull cases', () => {
   test.each`

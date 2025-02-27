@@ -1,4 +1,4 @@
-import { isSet } from '.';
+import { isSet } from '..';
 
 describe('isSet cases', () => {
   test.each`

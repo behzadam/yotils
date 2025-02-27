@@ -1,4 +1,4 @@
-import { isDate } from './';
+import { isDate } from '..';
 
 describe('isDate cases', () => {
   test.each`

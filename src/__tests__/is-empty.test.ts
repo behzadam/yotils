@@ -1,4 +1,4 @@
-import { isEmpty } from './';
+import { isEmpty } from '..';
 
 describe('isEmpty cases', () => {
   test.each`

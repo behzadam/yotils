@@ -1,4 +1,4 @@
-import { isEqualDate } from './';
+import { isEqualDate } from '..';
 
 describe('isEqualDate cases', () => {
   it('should return true when two dates are equal', () => {
