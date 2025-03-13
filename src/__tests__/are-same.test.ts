@@ -11,7 +11,7 @@ describe('areSame', () => {
     ${['one', 'two', 'three']} | ${false}
     ${[1.5, 2.5, 3.5]}         | ${false}
     ${[true, false, true]}     | ${false}
-  `('should return $expected when input is: $input', ({ input, expected }) => {
+  `('returns $expected when input is: $input', ({ input, expected }) => {
     expect(areSame(input)).toBe(expected);
   });
 });
