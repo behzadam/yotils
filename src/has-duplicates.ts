@@ -13,8 +13,6 @@ import { Primitive } from './types';
  *
  * @public
  */
-export function hasDuplicates<Item extends keyof Primitive>(
-  array: Item[],
-): boolean {
+export function hasDuplicates<Item extends Primitive>(array: Item[]): boolean {
   return new Set(array).size < array.length;
 }
