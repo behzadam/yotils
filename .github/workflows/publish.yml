@@ -1,42 +1,38 @@
 name: Release
+
 on:
   push:
     branches:
       - release
 
-permissions:
-  contents: read
-
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "lts/*"
-      - uses: pnpm/action-setup@v2
-        with:
-          version: latest
-      - run: pnpm install
-      - run: pnpm build:docs
+      - name: Checkout
+        uses: actions/checkout@v4
 
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "lts/*"
-          registry-url: https://registry.npmjs.org/
       - uses: pnpm/action-setup@v2
+        name: Install pnpm
         with:
-          version: latest
-      - run: pnpm install
-      - run: pnpm publish --no-git-checks
-      - run: npx semantic-release
+          version: 8
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Publish 🚀
+        shell: bash
+        run: |
+          pnpm publish --access public --no-git-checks
+          npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
