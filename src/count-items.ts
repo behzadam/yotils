@@ -7,7 +7,7 @@ import { Primitive } from './types';
  * ```ts
  * countItems(["in", "love", "love", "love"]) // { in: 1, love: 3 }
  * ```
- * @beta
+ * @public
  */
 export function countItems<Item extends Primitive>(
   array: Item[],
