@@ -36,20 +36,3 @@ export function groupBy<T, K extends string | number | symbol>(
     {} as Record<K, T>,
   );
 }
-
-// const result = groupBy(
-//   [
-//     { name: 'Alice', age: 25 },
-//     { name: 'Bob', age: 30 },
-//     { name: 'Charlie', age: 25 },
-//     {
-//       name: 'David',
-//       age: 30,
-//       address: {
-//         city: 'New York',
-//         state: 'NY',
-//       },
-//     },
-//   ],
-//   (item) => (item.age > 25 ? 'old' : 'young'),
-// );
