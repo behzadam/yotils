@@ -14,7 +14,10 @@
  * get(object, 'a.b.c', 42); // returns 42
  *
  * @returns The value at the specified path, or the default value if the path does not exist.
+ *
+ * @public
  */
+import { castPath } from './internal/_cast-path';
 import { AnyObject } from './types';
 
 export function get<T>(
@@ -26,18 +29,7 @@ export function get<T>(
     return defaultValue;
   }
 
-  /**
-   * - The path.split(/\.|\[|\]/) splits the path string by ., [, or ].
-   * - The filter(Boolean) removes any empty strings,
-   *   resulting from the split (e.g., from trailing or leading brackets).
-   *
-   * Example:
-   * 'a[0].b.c' becomes ['a', '0', 'b', 'c']
-   * 'x.y.z' becomes ['x', 'y', 'z']
-   */
-  const pathArray = Array.isArray(path)
-    ? path
-    : path.split(/\.|\[|\]/).filter(Boolean);
+  const pathArray = castPath(path);
 
   let result: AnyObject | undefined = obj;
   for (const key of pathArray) {

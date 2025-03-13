@@ -22,7 +22,7 @@ export { isString } from './is-string';
 export { isNull } from './is-null';
 export { omitBy } from './omit-by';
 export { toChunks } from './to-chunks';
-export { indexBy } from './index-by';
+export { groupBy as indexBy } from './group-by';
 export { wrapInArray } from './wrap-in-array';
 export { getLength } from './get-length';
 export { get } from './get';

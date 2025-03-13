@@ -7,7 +7,7 @@ describe('hasDuplicates cases', () => {
     ${['one', 'one', 'two']}   | ${true}
     ${[1, 2, 3]}               | ${false}
     ${['one', 'two', 'three']} | ${false}
-  `('should return $expected when array is: $array', ({ array, expected }) => {
+  `('returns $expected when array is: $array', ({ array, expected }) => {
     expect(hasDuplicates(array)).toBe(expected);
   });
 });
