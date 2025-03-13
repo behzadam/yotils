@@ -1,8 +1,9 @@
-name: Release components package
+name: Release
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - release
 
 jobs:
   build:
@@ -29,9 +30,10 @@ jobs:
 
       - name: Publish 🚀
         shell: bash
-        run: pnpm publish --access public --no-git-checks
+        run: |
+          pnpm publish --access public --no-git-checks
+          npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-
