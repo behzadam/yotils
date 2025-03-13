@@ -9,7 +9,7 @@ describe('getLength cases', () => {
     ${{ id: 1 }} | ${1}
     ${true}      | ${0}
     ${1}         | ${0}
-  `('should return $expected when input is: $input', ({ input, expected }) => {
+  `('returns $expected when input is: $input', ({ input, expected }) => {
     expect(getLength(input)).toBe(expected);
   });
 });
