@@ -1,4 +1,3 @@
-import { isArray } from './is-array';
 import { isObject } from './is-object';
 import { isString } from './is-string';
 
@@ -19,7 +18,7 @@ import { isString } from './is-string';
  */
 export function getLength(input: unknown): number {
   if (input === null || input === undefined) return 0;
-  if (isString(input) || isArray(input)) return input.length;
+  if (isString(input) || Array.isArray(input)) return input.length;
   if (isObject(input)) {
     const keys = Object.keys(input);
     return keys.length;

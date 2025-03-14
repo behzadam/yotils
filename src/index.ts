@@ -7,7 +7,6 @@
  */
 export { countItems } from './count-items';
 export { hasDuplicates } from './has-duplicates';
-export { isArray } from './is-array';
 export { isArrayOfString } from './is-array-of-string';
 export { isDefined } from './is-defined';
 export { isEmpty } from './is-empty';
@@ -26,3 +25,4 @@ export { groupBy as indexBy } from './group-by';
 export { wrapInArray } from './wrap-in-array';
 export { getLength } from './get-length';
 export { get } from './get';
+export { isUndefinedOrNull } from './is-undefined-or-null';

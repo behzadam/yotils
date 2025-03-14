@@ -5,7 +5,12 @@ describe('isArrayOfString cases', () => {
     input              | expected
     ${['a', 'b', 'c']} | ${true}
     ${['a', 'b', 1]}   | ${false}
-  `('should return $expected when input is: $input', ({ input, expected }) => {
+    ${[]}              | ${false}
+    ${'a'}             | ${false}
+    ${1}               | ${false}
+    ${null}            | ${false}
+    ${undefined}       | ${false}
+  `('returns $expected when input is: $input', ({ input, expected }) => {
     expect(isArrayOfString(input)).toBe(expected);
   });
 });
