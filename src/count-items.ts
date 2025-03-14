@@ -7,16 +7,15 @@ import { Primitive } from './types';
  * ```ts
  * countItems(["in", "love", "love", "love"]) // { in: 1, love: 3 }
  * ```
- * @beta
+ * @public
  */
 export function countItems<Item extends Primitive>(
   array: Item[],
-): Record<string, Item> {
-  return array.reduce(
-    (acc: any, current) => {
-      acc[current] = !acc[current] ? 1 : ++acc[current];
-      return acc;
-    },
-    {} as Record<string, Item>,
-  );
+): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const item of array) {
+    const key = item.toString();
+    counts[key] = (counts[key] || 0) + 1;
+  }
+  return counts;
 }

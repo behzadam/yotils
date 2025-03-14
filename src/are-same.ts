@@ -2,7 +2,7 @@ import { Primitive } from './types';
 
 /**
  * Compares all items in the given array and returns true if they are same.
- * @param array - Given array.
+ * @param array - Given array of items to compare.
  * @returns true | false
  * @example
  *
@@ -11,10 +11,11 @@ import { Primitive } from './types';
  * areSame(["one", "one", "one"]) // true
  * areSame([1, 2]) // false
  * ```
- * @alpha
  */
 export function areSame<Item extends Primitive>(
-  array: Required<Item[]>,
+  array: readonly Item[],
 ): boolean {
-  return array.every((item) => item === array[0]);
+  if (array.length <= 1) return true;
+  const firstItem = array[0];
+  return array.slice(1).every((item) => item === firstItem);
 }

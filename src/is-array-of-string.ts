@@ -8,9 +8,15 @@ import { isString } from './is-string';
  * ```ts
  * isArrayOfString(["a", "b", "c"]) // true
  * isArrayOfString(["a", "b", 1])   // false
+ * isArrayOfString([])              // false
  * ```
  * @public
  */
 export function isArrayOfString(input: unknown): input is string[] {
-  return Array.isArray(input) && input.every((item) => isString(item));
+  if (!Array.isArray(input)) return false;
+  if (input.length === 0) return false;
+  for (const item of input) {
+    if (!isString(item)) return false;
+  }
+  return true;
 }

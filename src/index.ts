@@ -7,7 +7,6 @@
  */
 export { countItems } from './count-items';
 export { hasDuplicates } from './has-duplicates';
-export { isArray } from './is-array';
 export { isArrayOfString } from './is-array-of-string';
 export { isDefined } from './is-defined';
 export { isEmpty } from './is-empty';
@@ -22,7 +21,8 @@ export { isString } from './is-string';
 export { isNull } from './is-null';
 export { omitBy } from './omit-by';
 export { toChunks } from './to-chunks';
-export { indexBy } from './index-by';
+export { groupBy as indexBy } from './group-by';
 export { wrapInArray } from './wrap-in-array';
 export { getLength } from './get-length';
 export { get } from './get';
+export { isUndefinedOrNull } from './is-undefined-or-null';
