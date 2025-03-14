@@ -1,6 +1,6 @@
 {
   "name": "yotils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Typescript utility functions.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
