@@ -11,5 +11,8 @@
  * @public
  */
 export function isDate(value: unknown): value is Date {
-  return value instanceof Date;
+  if (value === null || value === undefined || typeof value !== 'object') {
+    return false;
+  }
+  return value instanceof Date && !isNaN(value.getTime());
 }
