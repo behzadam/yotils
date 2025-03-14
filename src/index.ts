@@ -7,7 +7,6 @@
  */
 export { countItems } from './count-items';
 export { hasDuplicates } from './has-duplicates';
-export { isArray } from './is-array';
 export { isArrayOfString } from './is-array-of-string';
 export { isDefined } from './is-defined';
 export { isEmpty } from './is-empty';
