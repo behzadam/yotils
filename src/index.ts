@@ -25,3 +25,4 @@ export { groupBy as indexBy } from './group-by';
 export { wrapInArray } from './wrap-in-array';
 export { getLength } from './get-length';
 export { get } from './get';
+export { isUndefinedOrNull } from './is-undefined-or-null';
